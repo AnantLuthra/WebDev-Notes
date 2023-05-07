@@ -198,12 +198,16 @@ also car requires petrol to run.
 #### META (for adding website preview)
 - Through this property of meta tag we can set what to show in embedds when the link of our webite is shared on any social media app.
 - We're setting title, description and image which will be showed in preview.
+- `<meta name="keywords" content="_, _, _">` - By putting keywords related to our website in content attribute we can help our website for SEO(search engine optimization) - because through this keywords google's search engine get's ease to show up your website.
+- `<meta name="robots" content="NOINDEX, NOFOLLOW">` - Through this tag we can weather put INDEX and FOLLOW in content if we wanna SEO to show our website on search, otherwise we can use NOINDEX & NOFOLLOW.
 ```html
 <head>
     <meta property="og:title" content="Desi site">
     <meta property="og:description" content="A site where you can buy desi street dogs">
     <meta property="og:image" content="dog.jpeg">
     <title>That's meta</title>
+    <meta name="keywords" contents="e-commerce, online shopping, cash on delievery, free delievery, online sale">
+    <meta name="robots" content="INDEX, FOLLOW">
 </head>
 ```
 ### Style tag
