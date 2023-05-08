@@ -22,6 +22,7 @@
       - [META (for adding website preview)](#meta-for-adding-website-preview)
     - [Style tag](#style-tag)
     - [Form](#form)
+    - [Text editing tags](#text-editing-tags)
 
 ## Basics of internet
 ### Routers
@@ -124,26 +125,40 @@ also car requires petrol to run.
 </body>
 ```
 ### Tables
-- `<table>` - is tag showing that a table is created, and `<tr>` stands for table row,
-- `<td>` stands for table data.
+- `<table>` - tag for creating table.
+- A table also contains `<thead>` and `<body>` just like HTML structure.
+- `<thead>` - Under this tag data of heading of columns is feeded.
+- `<tr>` - For storing data into a row, (used both in `<thead>` and `<body>` tags inside `<table>`)
+- `<th>` - This tag is used for creating column headings used in `<thead>`
+- `<td>` - Storing data into rows, it is used inside `<body> - <tr>` tags.
 ```html
 <body>
-    <table>
-        <tr>
-            <td>Anant</td>
-            <td>Shiv</td>
-            <td>Shekhar</td>
-        </tr>
-        <tr>
-            <td>Vikas</td>
-            <td>Gautam</td>
-            <td>Gambhir</td>
-        </tr>
-        <tr>
-            <td>Disco</td>
-            <td>Dancer</td>
-            <td>Best</td>
-        </tr>
+    <table style="border:1px solid black; border-spacing: 10px; padding: 2px; margin-left: auto; margin-right: auto;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+                <th>Salary</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <body>
+            <tr>
+                <td>Anant</td>
+                <td>425</td>
+                <td>devpuri</td>
+            </tr>
+            <tr>
+                <td>Vikas</td>
+                <td>23</td>
+                <td>prayagraj</td>
+            </tr>
+            <tr>
+                <td>shekhar</td>
+                <td>25</td>
+                <td>shimla</td>
+            </tr>
+        </body>
     </table>
 </body>
 ```
@@ -173,6 +188,7 @@ also car requires petrol to run.
 - `href` - Hyper reference
 - We should be very be aware of on what link we're clicking on because as you see in the below example the text could be showing something and the link could take us somewhere else, so we should rather first hover on the link and see the link at the bottom left corner of the browser window.
 - Below in both the cases the link is of my github account but in the first case it is pretending to be github link of param's account but in real it's not. That's why we should be very conscious while clicking on any URL on the interent on any website.
+- `<a href="" target="_blank">link</a>` - Using this attribute in anchor tag we can set link to open in new tab.
 ```html
 <body>
     Visit Param on <a href="https://github.com/AnantLuthra">https://github.com/param302</a>
@@ -239,5 +255,19 @@ also car requires petrol to run.
         <input autocomplete="off" autofocus name="q" placeholder="Search google" type="search">
         <input type="submit" value="Enter">
     </form>
+</body>
+
+```
+
+### Text editing tags
+- `<strong>` - It is used to bold text in a paragraph tag.
+- `<em>` - It is used for italic.
+- `<hr>` - It creates a horizontal line.. just like when we use `--` in markdown file.
+```html
+<body>
+    <h1>Schools</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium quisquam ea accusamus ullam <strong>hli snao aksdfj</strong> aliquam eum itaque, <em>laks namem nasho !!</em> aliquid! Temporibus.</p>
+    <hr>
+    <p>nacho</p>
 </body>
 ```
