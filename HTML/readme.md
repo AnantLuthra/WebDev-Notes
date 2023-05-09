@@ -23,6 +23,8 @@
     - [Style tag](#style-tag)
     - [Form](#form)
     - [Text editing tags](#text-editing-tags)
+    - [Inline / block element](#inline--block-element)
+    - [Id \& classes](#id--classes)
 
 ## Basics of internet
 ### Routers
@@ -271,3 +273,14 @@ also car requires petrol to run.
     <p>nacho</p>
 </body>
 ```
+
+### Inline / block element
+- Inline elements are those tags which doesn't require whole line to exist, example - `<em>`, `<strong>`, `<img>`
+- Block elements are those tags which require whole line to exist, example - `<div>`, `<li>`.
+
+
+### Id & classes
+- ID is unique of every element in html, used to identify and use/manipulate data of that element from backend.
+- Classes are such a temple in which all properties are defined like color, bg-color, alignment, border etc, and when we put this classes names into an element in html then it acquires all the properties of that class.
+- We can use as many classes we want in an element.
+- Classes are defined in CSS file.
