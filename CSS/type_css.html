@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types-of-css</title>
+    <style>        
+        body {
+            background-color: black;
+        }
+        /* class selector  */
+        .cenAlign{
+            text-align: center;
+            border: 2px solid yellow;
+        }
+        .bgBlue{
+            color: red;
+            background-color: rgb(60, 14, 226);
+        }
+
+        /* element selector  */
+        h2 {
+            text-align: center;
+        }
+
+        /* id selector  */
+        #mySpan1{
+            color: yellow;
+            text-align: center;
+        }
+
+        /* grouping selector */
+        span, footer{
+            color: rgb(241, 0, 241);
+        }
+
+        .whiteFont {
+            color: white;
+        }
+
+        #headingMain {
+            font-family: "Cooper Black";
+        }
+
+        .universalFont {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="headingMain" class="whiteFont">Hare Krishna</h2>
+    <p id="firstPara" class="cenAlign whiteFont universalFont">
+        These are types of css selectors
+    </p>
+    <p id="secondPara" class="cenAlign bgBlue universalFont">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci voluptates ipsa in consequatur repellendus vero, earum quis labore nostrum impedit. Corporis nisi similique accusamus modi? Accusantium excepturi explicabo at quibusdam!
+    </p>
+    <div>
+        <p id="mySpan1" class="universalFont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi architecto recusandae consectetur eveniet vero nemo quibusdam iure, facilis facere eaque? Lorem ipsum dolor sit amet consectetur adipisicing elit. A id nobis voluptatem saepe, aliquid cupiditate vel magni nihil natus libero!
+        </p>
+        <span class="universalFont">This is a span Lorem ipsum dolor sit amet.</span>
+    </div>
+    <footer class="cenAlign universalFont">This is lower footer which is always laying down in the feet of website.</footer>
+</body>
+</html>
