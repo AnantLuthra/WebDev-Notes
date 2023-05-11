@@ -1,0 +1,34 @@
+body {
+    background-color: rgba(5, 102, 246, 0.315);
+    background-image: url('./assets/back1.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+}
+
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+header {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+.red {
+    background-color: rgba(6, 201, 254, 0.185);
+    color: white;
+    text-align: center;
+}
+.blue {
+    text-align: center;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+#mainDiv {
+    height: 300px;
+}

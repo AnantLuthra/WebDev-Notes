@@ -59,3 +59,26 @@ span, footer{
     color: rgb(241, 0, 241);
 }
 ```
+
+- With * selector we can set properties for every element in html.
+
+### Background image
+
+- We can set BG by `background-image` property while styling body tag of html like this-
+```css
+body {
+    background-image: url('./assets/back1.jpeg');
+    background-repeat: round;
+}
+```
+- Their is also a background-repeat property for repeating type of image in background.
+- **Types of background-repeat options**
+- `background-repeat: repeat-x;` - This repeats image in x axis.
+- `background-repeat: repeat-y;` - This repeats image in y axis.
+- `background-repeat: no-repeat;`
+- `background-repeat: space;` - This will repeat image in x axis but it will take care that every image is shown completely, if not it will remove last image and adjust space of that between other images.
+- **`Background-size` property**
+- `background-size: auto;` - automatically image is set as per the size of it.
+- `background-size: cover;` - Just fills the image all over the element on which you've set the image.
+- `background-size: contain;` - Fits the image, as it is fully visible.
+- `background-size: 100px 100px;` - Giving size manually. (It will effect looks of image)
