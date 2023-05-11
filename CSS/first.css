@@ -1,18 +1,23 @@
 body {
     background-color: rgba(5, 102, 246, 0.315);
-    background-image: url('./assets/back1.jpeg');
-    background-repeat: no-repeat;
+    background-image: url('./assets/back3.jpg');
+    background-repeat: repeat-y;
     background-size: contain;
+    background-position: center;
+    background-attachment: local;
 }
 * {
-    font-family: "Rubik", sans-serif;
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
 }
 
 header {
     text-align: center;
-    font-size: 30px;
-    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    font-family: 'Patua One', cursive;
     text-align: center;
+    color: black;
+    background-color: rgba(217, 255, 0, 0.342);
 }
 
 .red {
@@ -23,9 +28,11 @@ header {
 .blue {
     text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
-    text-align: center;
 }
 
 #mainDiv {
-    height: 300px;
+    /* height: 300px; */
+    color: rgb(0, 0, 255);
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
