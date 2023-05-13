@@ -131,3 +131,9 @@ background-attachment: revert;
 background-attachment: revert-layer;
 background-attachment: unset;
 ```
+
+### Box model
+- The box model describes how `content, padding, border, margin` these elements work together to create a box as displayed by CSS.
+
+- like shown in this [image](https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png)
+- Represented box model in this [FILE](./box_m.html)

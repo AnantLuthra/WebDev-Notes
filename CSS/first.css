@@ -1,16 +1,16 @@
 body {
-    background-color: rgba(5, 102, 246, 0.315);
+    /* background-color: rgba(5, 102, 246, 0.315);
     background-image: url('./assets/back3.jpg');
     background-repeat: repeat-y;
     background-size: contain;
     background-position: center;
-    background-attachment: local;
+    background-attachment: local; */
+    background: url(./assets/High_resolution_wallpaper_background_ID_77701652693.jpg) no-repeat contain;
 }
 * {
     font-family: 'Special Elite', cursive;
     font-size: 25px;
 }
-
 header {
     text-align: center;
     font-size: 50px;
@@ -20,7 +20,7 @@ header {
     background-color: rgba(217, 255, 0, 0.342);
 }
 
-.red {
+/* .red {
     background-color: rgba(6, 201, 254, 0.185);
     color: white;
     text-align: center;
@@ -32,7 +32,8 @@ header {
 
 #mainDiv {
     /* height: 300px; */
-    color: rgb(0, 0, 255);
+    /* color: rgb(0, 0, 255); */
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+*/

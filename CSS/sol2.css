@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    background-color: darkblue;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 1.24px;
+    font-style: normal;
+    font-weight: 500;
+    width: 76px;
+    height: 250px;
+    height: 50vh;
+}
+
+.main {
+    background: rgb(255, 0, 0);
+    color: yellow;
+    font-size: 24px;
+}
+
+.ques3 {
+    background-image: url(./assets/back4.jpg);
+    /* background-size: 270px 200px; */
+    background-size: 380px 400px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: lightblue;
+    width: 400px;
+    height: 600px;
+    color: white;
+    font-size: 22px;
+}
