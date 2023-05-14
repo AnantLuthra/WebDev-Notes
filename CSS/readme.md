@@ -137,3 +137,52 @@ background-attachment: unset;
 
 - like shown in this [image](https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png)
 - Represented box model in this [FILE](./box_m.html)
+  
+- **Padding**
+```css
+/* top | right | bottom | left */
+padding: 5px 2px 0 4px;
+
+/* top&bottom | left&right */
+padding: 5px 2px;
+
+/* all sides */
+padding: 4px;
+```
+- This thing same works in margin.
+
+- **Border**
+```css
+border-width: 3px;
+border-style: solid;
+/* More values of border-style */
+/* 
+dashed
+dotted
+double
+groove
+hidden
+inherit
+initial
+inset
+none
+outset
+ridge 
+*/
+
+/* Also we can specify border like this */
+/* top | right | bottom | left */
+border-style: none solid dotted dashed;
+border-color: red;
+
+/* It rounds the corners of the border.
+if you keep increasing the radius it will become
+a circle */
+border-radius: 20px;
+```
+
+### Margin collapse
+
+- If their are two elements and their margin is collapsing then the browser set the margin between these two elements who's margin is greater, or if margin is same then only once the margin is given.
+- like if element A has 3px margin and element B also has the same margin then - the distance between these two element will be of 3px.
+- and if margin is greater in any element then it will be the distance between those two elements.
