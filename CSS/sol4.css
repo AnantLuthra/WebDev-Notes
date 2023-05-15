@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.navbar {
+    background-color: black;
+    width: 100%;
+    height: 8%px;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    display: inline-block;
+    width: 50%;
+    height: 85vh;
+}
+
+.green {
+    margin: 0px;
+    padding: 0px;
+    background-color: green;
+    display: inline-block;
+    width: 50%;
+    height: 85vh;
+}
+
+footer {
+    font-family: 'Baloo Bhai 2', cursive;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 16px 39px;
+    font-size: 20px;
+}
+.navbar ul li a {
+    color: white;
+    font: 40px;
+    text-decoration: none;
+}
