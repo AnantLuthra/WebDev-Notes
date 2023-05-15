@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 255, 38, 0.178);
+}
+
+.div1 {
+    background-color: blue;
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    border-width: 3px;
+    border-style: solid none solid none;
+    border-color: black;
+    text-align: center;
+    background-image: url(./assets/High_resolution_wallpaper_background_ID_77701652693.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 25px;
+    text-decoration: red wavy underline;
+    text-transform:capitalize;
+}
+.div2 {
+    display: inline-block;
+    background-color: rgb(0, 255, 38);
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    border-width: 3px;
+    border-style: solid none solid none;
+    border-color: black;
+    text-align: center;
+    background-image: url(./assets/High_resolution_wallpaper_background_ID_77701652693.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: 25px;
+    text-decoration: red wavy underline;
+    text-transform:capitalize;
+}

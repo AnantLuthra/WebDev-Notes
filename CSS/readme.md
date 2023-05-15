@@ -186,3 +186,61 @@ border-radius: 20px;
 - If their are two elements and their margin is collapsing then the browser set the margin between these two elements who's margin is greater, or if margin is same then only once the margin is given.
 - like if element A has 3px margin and element B also has the same margin then - the distance between these two element will be of 3px.
 - and if margin is greater in any element then it will be the distance between those two elements.
+
+- **`box Sizing`**
+
+- Determines what out of padding and border is included in elements width and height can be content-box or border-box
+Include only content in width/height
+
+```css
+.div1{
+          box-sizing: border-box;
+}
+```
+- The content width and height includes, content + padding + border
+
+### Display properties
+
+- **Inline, block**
+- Inline elements are those tags which doesn't require whole line to exist, example - `<em>`, `<strong>`, `<img>`
+- Block elements are those tags which require whole line to exist, example - `<div>`, `<li>`.
+
+```css
+/* precomposed values */
+display: block;
+display: inline;
+
+/* In inline-block we can use padding/margin whereas in inline we can't*/
+display: inline-block;
+```
+
+**display: none vs visibility: hidden**
+- With display: none, the element is removed from the document flow. Its space is not blocked.
+- With visibility: hidden, the element is hidden but its space is reserved.
+
+### Text-decoration property
+
+- Used to decorate the text, It can be overline, line-through, underline, none.
+
+```css
+text-decoration: underline;
+text-decoration: underline dotted;
+text-decoration: underline dotted red;
+text-decoration: green wavy underline;
+```
+
+- **`text-transformation`**
+
+```css
+/* Keyword values */
+text-transform: none;
+text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;
+```
+
+
+### Types of family in fonts(types)
+
+- **font family** - A specific font style
+- **Generic familly** - Collection of many font styles.
