@@ -244,3 +244,5 @@ text-transform: lowercase;
 
 - **font family** - A specific font style
 - **Generic familly** - Collection of many font styles.
+
+### Size, position and lists.
