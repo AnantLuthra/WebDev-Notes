@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,11 +11,13 @@
             margin: 0;
             padding: 0;
         }
+
         header nav ul li {
             display: inline;
             padding: 0vw 2vw;
-            font-size: 2vw;
+            font-size: 5vh;
         }
+
         header {
             background-color: red;
             width: 100vw;
@@ -22,34 +25,77 @@
             padding: 20px;
             position: sticky;
             top: 0;
+            z-index: 3;
         }
+
         .content {
             background-color: rgba(2, 250, 52, 0.587);
             min-height: 2000px;
             font-size: 30px;
             width: 100vw;
         }
+
         .heading {
             text-align: center;
-            font-size: 50px;
+            font-size: 9vh;
             font-family: 'Times New Roman', Times, serif;
-            padding: 20px 0;
-            position: relative;
-            z-index: 5;
+            padding: 2vh 0;
         }
 
         .content ul li {
-            list-style:circle;
+            list-style: circle;
         }
+
         .content ul {
             padding: 50px;
         }
+
         .subheading {
-            padding: 0px 30px;
-            font-size: 40px;
+            padding: 0px 6vw;
+            font-size: 6vh;
+        }
+
+        .dabba1 {
+            background-color: rgb(188, 245, 197);
+            width: 150px;
+            height: 70px;
+            font-size: 26px;
+            border-color: rgb(4, 0, 0);
+            border-style: solid none solid none;
+            border-radius: 30px;
+            text-align: center;
+            position: fixed;
+            padding-top: 10px;
+            right: 12px;
+            bottom: 14px;
+            background-color: rgb(255, 0, 0);
+        }
+
+        .dabba1 a {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            color: white;
+        }
+
+        .image {
+            background-image: url(https://thumbs.dreamstime.com/b/young-pretty-programmer-wearing-head-phone-looking-to-screen-confident-smile-wearing-headphone-looking-to-screen-125783649.jpg);
+            z-index: 2;
+            width: 450px;
+            height: 350px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: auto;
+            position: absolute;
+            right: 32px;
+            top: 240px;
+            border-color: rgb(2, 52, 2);
+            border-width: 3px;
+            border-style: solid none solid none;
+            border-radius: 40px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -69,12 +115,19 @@
             Key features of our academy.
         </div>
         <ul>
-            <li>"Master the art of full stack development and take your coding skills to new heights!"</li>
+            <li>"Master the art of full stack development and take your coding skills to new <br> heights!"</li>
             <li>"Join our online course and become a full stack development ninja!"</li>
-            <li>"Ready to take your coding career to the next level? Enroll in our full stack development course today!"</li>
-            <li>"Unleash your coding potential with our comprehensive full stack development online course."</li>
-            <li>"Transform yourself into a full stack developer and unlock limitless coding possibilities!"</li>
+            <li>"Ready to take your coding career to the next level? Enroll in our full stack <br> development course today!"
+            </li>
+            <li>"Unleash your coding potential with our comprehensive full stack development <br> online course."</li>
+            <li>"Transform yourself into a full stack developer and unlock limitless coding <br> possibilities!"</li>
         </ul>
+        <div class="image"></div>
+    </div>
+    <div class="dabba1">
+        <a href="https://github.com/anantluthra" target="_blank">Contact<br>Us</a>
+    </div
     </div>
 </body>
+
 </html>
