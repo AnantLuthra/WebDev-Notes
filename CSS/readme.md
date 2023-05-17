@@ -11,6 +11,7 @@
     - [Types of family in fonts(types)](#types-of-family-in-fontstypes)
     - [Size, position and lists.](#size-position-and-lists)
     - [The position property](#the-position-property)
+    - [Z-index property](#z-index-property)
 
 
 ### Types of CSS
@@ -298,3 +299,7 @@ max-width: 20%;
 - `absolute`: The element is removed from the flow and is relatively positioned to its first non-static ancestor. top/bottom etc. works
 - `fixed`: Just like absolute except the element is positioned relative to the browser window
 - `sticky`: The element is positioned based on the user’s scroll position
+
+### Z-index property
+
+- It is kinda like layers in a burger, the uppermost layer will be visible to us, and if we wanna se the below layer we'll have to remove top most layer.

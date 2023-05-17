@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    height: 4000;
-}
 
 body {
     height: 10000;
@@ -30,7 +25,6 @@ header ul li a {
 }
 
 header ul {
-    margin: 10px;
     padding: 20px;
     border: 2px solid red;
 }
@@ -38,7 +32,7 @@ header ul {
 .container {
     background-color: rgba(0, 255, 0, 0.511);
     width: 60%;
-    height: 1000px; 
+    height: 70vh; 
     margin: auto;
     z-index: 100;
 }
@@ -57,4 +51,12 @@ header ul {
     right: 12px;
     bottom: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.secondUl {
+    background-color: wheat;
+}
+
+.secondUl  li {
+    list-style: georgian;
 }
