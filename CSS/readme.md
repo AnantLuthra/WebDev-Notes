@@ -1,5 +1,17 @@
 # CSS notes
 
+- [CSS notes](#css-notes)
+    - [Types of CSS](#types-of-css)
+    - [Types of basic selectors](#types-of-basic-selectors)
+    - [Background image \& its properties](#background-image--its-properties)
+    - [Box model](#box-model)
+    - [Margin collapse](#margin-collapse)
+    - [Display properties](#display-properties)
+    - [Text-decoration property](#text-decoration-property)
+    - [Types of family in fonts(types)](#types-of-family-in-fontstypes)
+    - [Size, position and lists.](#size-position-and-lists)
+    - [The position property](#the-position-property)
+
 
 ### Types of CSS
 - Inline CSS - Using CSS in a tag, like this -
@@ -149,7 +161,13 @@ padding: 5px 2px;
 /* all sides */
 padding: 4px;
 ```
-- This thing same works in margin.
+- **Margin**
+- Above style to set padding same works in margin.
+```css
+/* If we put margin to auto then it will automatically give eqal margin to both of the sides
+*/
+margin: auto;
+```
 
 - **Border**
 ```css
@@ -246,3 +264,37 @@ text-transform: lowercase;
 - **Generic familly** - Collection of many font styles.
 
 ### Size, position and lists.
+
+
+- **Size**
+Relative lengths
+These units are relative to the other length property.
+Following are some of the most commonly used relative lengths,
+
+- `em` – unit relative to the parent font size, em means “my parent element’s font-size”
+- `rem` – unit relative to the root font size (<html> tag)
+- `vw` – unit relative to 1% viewport width
+- `vh` – unit relative to 1% viewport height
+- `%` - unit relative to the parent element
+
+- **`Min/max- height/width property`**
+
+CSS has a min-height, max-height, and min-width, max-width property.
+
+```css
+min-height: 10%;
+max-height: 20%;
+min-width: 10%;
+max-width: 20%;
+```
+
+### The position property
+
+- Used to manipulate the location of an element
+- Following are the possible values:
+
+- `static`: The default position. top/bottom/left/right/z-index has no effect
+- `relative` : The top/bottom/left/right/z-index will now work. Otherwise, the element is in the flow of the document like static.
+- `absolute`: The element is removed from the flow and is relatively positioned to its first non-static ancestor. top/bottom etc. works
+- `fixed`: Just like absolute except the element is positioned relative to the browser window
+- `sticky`: The element is positioned based on the user’s scroll position
