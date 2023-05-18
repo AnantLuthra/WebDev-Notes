@@ -12,6 +12,7 @@
     - [Size, position and lists.](#size-position-and-lists)
     - [The position property](#the-position-property)
     - [Z-index property](#z-index-property)
+    - [Flexbox](#flexbox)
 
 
 ### Types of CSS
@@ -303,3 +304,73 @@ max-width: 20%;
 ### Z-index property
 
 - It is kinda like layers in a burger, the uppermost layer will be visible to us, and if we wanna se the below layer we'll have to remove top most layer.
+
+### Flexbox
+
+- **Float property**
+```css
+/* We can float a element through this property, in right or left direction. */
+float: right;
+float: left;
+```
+
+- **Clear property** - It is used to clear up left and right space of a element in which float property has been set.
+- This property only works when, the element on which we're applying this property has 1 or more elements floating before it.
+
+```css
+<style>
+    .content1 {
+        background-color: blue;
+        width: 40vw;
+        height: 40vh;
+        float: right;
+    }
+
+    .content2 {
+        background-color: rgb(0, 255, 0);
+        width: 40vw;
+        height: 40vh;
+        float: right;
+        clear: both;
+    }
+</style>
+<body>
+    <div class="content1">box1</div>
+    <div class="content2">box2</div>
+</body>
+```
+- In above example box2 will clear space in both right and left side of it, and first box will shift below the second box.
+
+- **Setting an element for a flexbox**
+
+```css
+.container {
+    display: flex;                  /*Initialize a flexbox*/
+}
+```
+
+<img style="padding: 20px 40px;" src="data:image/png;base64,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" alt="test-image">
+
+- **`flex-direction property`** - Defines the direction towards which items are laid. It can be row (default), row-reverse, column and column-reverse
+
+
+- Flex properties for parent (flex container)
+
+Following are the properties for the flex parent:
+
+- **`flex-wrap`:** Can be wrap, nowrap, wrap-reverse. This wraps the elements inside flexbox when screen resolution decreases.
+- **`justify-content`:** Defines alignment along the main axis.
+- **`align-items`:** Defines alignment along the cross axis
+- **`align-content`:** Aligns a flex container’s lines when there is extra space in the cross axis. Basically when their is extra space between flex elements while aligning cross axis then we use this property.
+
+ 
+
+- Flex properties for the children (flex items)
+
+Following are the properties for the flex children:
+
+- **`order`**: Controls the order in which the elements appear in the flex container.
+- **`align-self`**: Allows default alignment to be overridden for the individual flex items
+- **`flex-grow`**: Defines the ability for a flex item to grow
+- **`flex-shrink`**: Specifies how much a flex item will shrink relative to the rest of the flex items
+
