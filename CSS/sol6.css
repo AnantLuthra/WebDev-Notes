@@ -8,16 +8,38 @@ header nav ul li {
     padding: 0vw 2vw;
     font-size: 5vh;
 }
+header nav {
+    padding: 9px 2px;
+}
 
 header {
     background-color: rgb(178, 166, 76);
     width: 100vw;
-    height: 5vh;
-    padding: 20px;
+    height: 8vh;
+    padding: 10px;
     position: sticky;
     top: 0;
     z-index: 3;
+    display: flex;
 }
+
+.pro-image {
+    background-image: url(https://github.com/anantluthra.png);
+    background-color: green;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: -20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin: 0px 10px;
+}
+
+.peoples {
+    display: flex;
+    justify-content: space-between;
+}   
+
 .heading {
     text-align: center;
     font-size: 9vh;
@@ -28,7 +50,6 @@ header {
     margin: 30px;
     width: 40vw;
     height: 40vh;
-    float: left;
     background-repeat: no-repeat;
     background-size: contain;
     border: 2px solid black;
@@ -38,12 +59,12 @@ header {
     margin: 30px;
     width: 40vw;
     height: 40vh;
-    float: left;
     background-repeat: no-repeat;
     background-size: contain;
     border: 2px solid black;
     border-radius: 10px;
 }
+
 .person1 {
     background-image: url(https://cdn.britannica.com/05/236505-050-17B6E34A/Elon-Musk-2022.jpg);
 }
