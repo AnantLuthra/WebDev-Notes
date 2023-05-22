@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('form').addEventListener('submit', function(event) {
         let color = document.querySelector('#color').value;
         body.style.backgroundColor = color;
-        event.preventDefault;
+        event.preventDefault();
     })
 });
