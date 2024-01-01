@@ -32,12 +32,15 @@
         background-color: rgb(239, 239, 225);}
     </style>
 </head>
+```
 - External CSS - In this we create a sepereate `.css` file and use css seperately in that file, by creating classes and using css for specific id's etc, example-
+
 ```html
 <head>
     <link href="style.css" rel="stylesheet">
 </head>
 ```
+
 
 ### Types of basic selectors 
 - CSS element selector
