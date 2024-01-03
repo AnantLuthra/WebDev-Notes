@@ -5,9 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Art Galary</title>
     <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         h1 {
             text-align: center;
-            font-size: 60px;
+            font-size: 3.5vw;
+        }
+        
+        #box {
+            width: 75vw;
+            height: 45vh;
+            margin: 5vh 12.5vw;
+            background-color: rgba(144, 243, 243, 0.813);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            border: solid black 2px;
+            align-items:center;
+        }
+
+        .boxes {
+            height: 25%;
+            width: 10%;
+            margin: 2% 2%;
+            background-color: rgb(139, 243, 139);
+            border: solid black 1px;
+        }
+
+        .container2 {
+            height: 25vh;
+            width: 60vw;
+            margin: 5vh 20vw;
+            background-color: rgb(226, 255, 205);
+            border: solid black 2px;
+            display: grid; 
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 50px 50px 20px 50px;
+            grid-gap: 5px;
+        }
+        
+        .griditem {
+            background-color: rgb(255, 127, 244);
+            border: solid black 1px;
+        }
+
+        #firstel {
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+
+        #fourthel {
+            grid-row: 2/4;
+        }
+
+        #nineel {
+            grid-column: 1/3;
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                background-color: rgb(216, 255, 157);
+            }
         }
     </style>
 </head>
@@ -15,8 +78,36 @@
     <h1 id="34">
         Our galary is world's largest art galary with amazing art collections of many famous and experienced artists.
     </h1>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam commodi nihil amet labore corrupti aut? Dolorum rerum, reiciendis sequi suscipit quia ducimus sed!
-    </p>
+
+    <div id="box">
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+        <div class="boxes"></div>
+    </div>
+
+    <div class="container2">
+        <div id="firstel" class="griditem">1</div>
+        <div class="griditem">2</div>
+        <div class="griditem">3</div>
+        <div id="fourthel" class="griditem">4</div>
+        <div class="griditem">5</div>
+        <div class="griditem">6</div>
+        <div class="griditem">7</div>
+        <div class="griditem">8</div>
+        <div id="nineel" class="griditem">9</div>
+        <div class="griditem">10</div>
+        <div class="griditem">11</div>
+    </div>
 </body>
 </html>

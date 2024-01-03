@@ -13,6 +13,11 @@
     - [The position property](#the-position-property)
     - [Z-index property](#z-index-property)
     - [Flexbox](#flexbox)
+    - [**Setting an element for a flexbox**](#setting-an-element-for-a-flexbox)
+      - [**Flex properties for the children (flex items)**](#flex-properties-for-the-children-flex-items)
+    - [Setting an element for a grid container](#setting-an-element-for-a-grid-container)
+      - [**Properties to be applied on grid items.**](#properties-to-be-applied-on-grid-items)
+    - [CSS media queries](#css-media-queries)
 
 
 ### Types of CSS
@@ -344,7 +349,7 @@ float: left;
 ```
 - In above example box2 will clear space in both right and left side of it, and first box will shift below the second box.
 
-- **Setting an element for a flexbox**
+### **Setting an element for a flexbox**
 
 ```css
 .container {
@@ -362,13 +367,15 @@ float: left;
 Following are the properties for the flex parent:
 
 - **`flex-wrap`:** Can be wrap, nowrap, wrap-reverse. This wraps the elements inside flexbox when screen resolution decreases.
-- **`justify-content`:** Defines alignment along the main axis.
-- **`align-items`:** Defines alignment along the cross axis
+- **`justify-content`:** Defines alignment along the main axis.<br>
+**Possible values** -  *`center`, `right`, `left`.*
+- **`align-items`:** Defines alignment along the cross axis, 
+<br>**Possible values** -  *`center`, `baseline`* - for top, *`end`*.
 - **`align-content`:** Aligns a flex container’s lines when there is extra space in the cross axis. Basically when their is extra space between flex elements while aligning cross axis then we use this property.
 
  
 
-- Flex properties for the children (flex items)
+#### **Flex properties for the children (flex items)**
 
 Following are the properties for the flex children:
 
@@ -377,3 +384,61 @@ Following are the properties for the flex children:
 - **`flex-grow`**: Defines the ability for a flex item to grow
 - **`flex-shrink`**: Specifies how much a flex item will shrink relative to the rest of the flex items
 
+
+### Setting an element for a grid container
+
+First make container a grid container by this.
+
+```css
+.container {
+    display: flex;
+}
+```
+
+- Then we can use further these properties to customise our grid container and its items.
+
+```css
+.container {
+    grid-row-gap: 2px;
+    grid-column-gap: 5px;
+    
+    grid-gap: 2px; /* this will set column and row gap together and of same length. */
+
+    grid-template-columns: 20px 20px 9px;
+    grid-template-rows: 20px 20px 9px;
+    /* the above one defines number of columns/rows and their width/height. */
+
+}
+```
+
+- `align-content` - <br>***valid arguments*** - *`baseline`, `center`, `end`, `space-between`, `space-around`.*
+
+- `justify-content` - same as in flexbox.
+
+#### **Properties to be applied on grid items.**
+
+- `grid-column`: We set this property in that element in which we want to exceed from `1 / n` where `n` represents n'th column till where we want to expand this perticular element/item.
+- `grid-row` - It also does the same thing as *`gird-column`* but it works on row. <br>***Example -*** below/ or look in this [File](../HTML/revise.html)
+```css
+#firstel {
+        grid-column: 1/3;
+        grid-row: 1/3;
+
+        /* Another style u can use it write it like this. */
+        grid-column: 1/ span 3;
+}
+```
+
+### CSS media queries
+
+- This is basically used to make our website responsive.
+- It is nothing but like checker of a event or say condition like viewport width if between 1 and 500px so it will run this code of css and if we specify some another case then css provided under that case will be triggered.
+
+***Example -***
+```css
+@media only screen and (max-width: 500px){
+    body {
+        background-color: red;
+    }
+}
+```
