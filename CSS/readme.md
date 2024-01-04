@@ -18,6 +18,9 @@
     - [Setting an element for a grid container](#setting-an-element-for-a-grid-container)
       - [**Properties to be applied on grid items.**](#properties-to-be-applied-on-grid-items)
     - [CSS media queries](#css-media-queries)
+    - [Transforms, Transitions and animations.](#transforms-transitions-and-animations)
+    - [CSS 2D transformations methods.](#css-2d-transformations-methods)
+      - [`Transform` available options.](#transform-available-options)
 
 
 ### Types of CSS
@@ -442,3 +445,26 @@ First make container a grid container by this.
     }
 }
 ```
+
+### Transforms, Transitions and animations.
+
+Transforms are used to rotate, move, skew or scale elements. They make a 3D effect.
+
+- `transform` - Used to apply 2D or 3D transformation to an element. 
+- `transform-origin` - The place by which / around which the element rotates. Possible values - `left, right, center`.z
+***Example -*** <br>
+2D transformations - we can change x & y exis.
+3D transformations - we can change even z exis also.
+
+### CSS 2D transformations methods.
+
+#### `Transform` available options.
+***Even we can use more than one transformations on an element at a time.***
+
+- translate() - move element in X or Y exis, argument - `translate(X, Y)`
+- rotate() - possible values in turn eg - `0.5turn`, in degrees eg - `45deg`
+- scaleX() - Scaling in X direction.
+- scaleY() - Scaling in Y direction.
+- scale() - Scaling in both X & Y direction simultaniously, eg - `scale(2, 3)`
+- skew() - 
+- matrix() - We can set above properties in with this in once. eg - `matrix(scaleX(), skewY(), skewX(), translateX(), translateY())`.
