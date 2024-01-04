@@ -21,6 +21,7 @@
     - [Transforms, Transitions and animations.](#transforms-transitions-and-animations)
     - [CSS 2D transformations methods.](#css-2d-transformations-methods)
       - [`Transform` available options.](#transform-available-options)
+    - [CSS 3D transformations methods.](#css-3d-transformations-methods)
 
 
 ### Types of CSS
@@ -468,3 +469,10 @@ Transforms are used to rotate, move, skew or scale elements. They make a 3D effe
 - scale() - Scaling in both X & Y direction simultaniously, eg - `scale(2, 3)`
 - skew() - 
 - matrix() - We can set above properties in with this in once. eg - `matrix(scaleX(), skewY(), skewX(), translateX(), translateY())`.
+
+### CSS 3D transformations methods.
+
+***You can use degree values in below properties.***
+- `rotateX()` - it is basically rotating the element around X axis.
+- `rotateY()` - it is basically rotating the element around Y axis.
+- `rotateZ()` - it is basically rotating the element around Z axis.
