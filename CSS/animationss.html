@@ -18,7 +18,6 @@
         }
 
         #box1 {
-            margin: 0px 25%;
             border: 2px solid black;
             transform: translate(10px, 10px) scaleX();
             transform-origin: left;
@@ -30,7 +29,29 @@
             height: 400px;
             width: 600px;
             transform: rotateX(10deg);
+            transition-property: width height;
+            transition-duration: 1s;
+            /* transition-timing-function: steps(4, jump-end); */
+            transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
         }
+
+        #img1:hover {
+            height: 300px;
+            width: 500px;
+        }
+
+        #bt1 {
+            width: 40px;
+            height: 30px;
+            transition-property: width height;
+            transition-duration: 0.5s;
+        }   
+
+        #bt1:hover {
+            width: 50px;
+            height: 40px;
+        }
+
     </style>
 </head>
 <body>
@@ -38,6 +59,9 @@
         <div id="box1">
             Hello
         </div>
+        <input id="bt1" type="button" value="Click">
+        
+        <br><br>
         <img src="https://buffer.com/cdn-cgi/image/w=1000,fit=contain,q=90,f=auto/library/content/images/size/w1200/2023/10/free-images.jpg" alt="image1" id="img1">
     </div>
 </body>

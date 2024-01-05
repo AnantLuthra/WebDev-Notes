@@ -19,9 +19,10 @@
       - [**Properties to be applied on grid items.**](#properties-to-be-applied-on-grid-items)
     - [CSS media queries](#css-media-queries)
     - [Transforms, Transitions and animations.](#transforms-transitions-and-animations)
-    - [CSS 2D transformations methods.](#css-2d-transformations-methods)
+      - [CSS 2D transformations methods.](#css-2d-transformations-methods)
       - [`Transform` available options.](#transform-available-options)
     - [CSS 3D transformations methods.](#css-3d-transformations-methods)
+    - [CSS transitions](#css-transitions)
 
 
 ### Types of CSS
@@ -452,12 +453,12 @@ First make container a grid container by this.
 Transforms are used to rotate, move, skew or scale elements. They make a 3D effect.
 
 - `transform` - Used to apply 2D or 3D transformation to an element. 
-- `transform-origin` - The place by which / around which the element rotates. Possible values - `left, right, center`.z
+- `transform-origin` - The place by which / around which the element rotates. Possible values - `left, right, center`,
 ***Example -*** <br>
 2D transformations - we can change x & y exis.
 3D transformations - we can change even z exis also.
 
-### CSS 2D transformations methods.
+#### CSS 2D transformations methods.
 
 #### `Transform` available options.
 ***Even we can use more than one transformations on an element at a time.***
@@ -476,3 +477,33 @@ Transforms are used to rotate, move, skew or scale elements. They make a 3D effe
 - `rotateX()` - it is basically rotating the element around X axis.
 - `rotateY()` - it is basically rotating the element around Y axis.
 - `rotateZ()` - it is basically rotating the element around Z axis.
+
+### CSS transitions
+
+It is used to change properties of elements in html very smoothly, over a given time duration.
+
+- ***The transition property***
+
+- `transition-property` - The property of element you want transtion in, for eg - ***width***
+- `transition-duration` - Duration in which you want to see the transition.
+- `transition-timing-function` - How you want the property to do transition.
+- `transition-delay` - After how much delay the transition should take place.
+
+***Here is a short hand property for setting above all things at once***
+
+- `transition` - property duration timing-function delay;
+```css
+#img1 {
+    transition: width 1s ease-in 0s;
+}
+```
+
+- **Transitioning multiple properties**
+
+```css
+#img1 {
+    transition: width 1s ease-in 0s, height 1s ease-in;
+    /* We can also skip any one argument as we did in the second transition of height, we skipped delay. */
+}
+```
+
