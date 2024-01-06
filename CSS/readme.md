@@ -23,6 +23,7 @@
       - [`Transform` available options.](#transform-available-options)
     - [CSS 3D transformations methods.](#css-3d-transformations-methods)
     - [CSS transitions](#css-transitions)
+    - [CSS Animations](#css-animations)
 
 
 ### Types of CSS
@@ -507,3 +508,47 @@ It is used to change properties of elements in html very smoothly, over a given 
 }
 ```
 
+### CSS Animations
+
+Through this we can transit multiple CSS properties of an element, we could use transitions also but for more number of changes/transitions the code will get longer, so here animations gives us shorter way to do that.
+
+***Properties to add animations***
+
+- `animation-name` - name of the animation
+- `animation-duration` - how long does the animation run?
+- `animation-time-function` - same as transition.
+- `animation-delay` - same as transition.
+- `animation-iteration-count` - number of times the animation should run.
+- `animation-direction` - specifies the direction of the animation. example arguments are - *`normal`*, *`reverse`* - animations starts from ending., *`alternate-reverse`* - it will go and then come back and then repeat (***to and from movement***)
+
+- Using above properties sample is given in this [FILE](./animation1.css)
+***Animation setting shorthand property***
+```css
+#box1 {
+    animation: anant 65 linear 15 infinite reverse;
+}
+```
+
+- ***One more example below***
+
+```css
+#box1 {
+    #box1 {
+    height: 70%;
+    width: 50%;
+    background-color: red;
+    animation: change1 1s 0.5s ease-in alternate-reverse infinite;
+}
+
+}
+@keyframes change1 {
+    from {
+        width: 50%;
+        height: 70%;
+    }
+    to {
+        width: 60%;
+        height: 80%;
+    }
+}
+```
