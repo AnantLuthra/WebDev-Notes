@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress bar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            margin-top: 1px;
+            background-image: url(../files/yt-background.png);
+            background-size: cover;
+        }
+
+        .progress {
+            height: 2px;
+            width: 100vw;
+            background-color: red;
+            animation: progressbar 1s ease-in 0.1s 1;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ff0;
+        }
+
+        body {
+            background: #ff0;
+        }
+
+        .logo1 {
+            max-height: 100%;
+            max-width: 100%;
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/72/Santipur_B.Ed_College_Logo.png');
+            float: left;
+        }
+
+        @keyframes progressbar {
+            0% {
+                width: 0vw;
+            }
+
+            90% {
+                width: 30vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+
+        #catimg {
+            height: 500px;
+            width: 500px;
+            animation: catdisco 1s 1 normal cubic-bezier(.27, .26, .5, .49);
+        }
+
+        @keyframes catdisco {
+            from {
+                transform: rotateZ(0deg);
+            }
+
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress">
+    </div>
+    <div class="main">
+        <img id="catimg" src="../files/cat.avif" alt="cat-image">
+    </div>
+</body>
+
+</html>
