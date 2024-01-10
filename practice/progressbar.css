@@ -29,7 +29,7 @@ body {
 
 #catimg {
     height: 200px;
-    width: 200px;
+    width: 201px;
     animation: catdisco 4s infinite normal cubic-bezier(.27, .26, .5, .49);
     /* margin-top: 1000px;
     margin-left: -10px; */
