@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Salsa&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 9vh;
+    background-color: rgb(1, 137, 1);
+}
+
+main {
+    height: 80vh;
+}
+
+footer {
+    background-color: rgb(2, 91, 2);
+    height: 8vh;
+    color: white;
+    font-family: 'Salsa', cursive;
+}
