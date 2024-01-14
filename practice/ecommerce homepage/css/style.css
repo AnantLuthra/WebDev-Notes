@@ -1,22 +1,228 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Salsa&display=swap');
 
+:root {
+    --bg-color1: rgb(1, 137, 1);
+    --bg-color2: rgb(2, 91, 2);
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 header {
+    background-color: var(--bg-color1);
+}
+
+nav {
+    display: flex;
+}
+
+#logo {
+    font-size: 38px;
+    color: white;
+    font-family: 'Salsa', cursive;
+    padding: 12px 28px;
+}
+
+#logo:hover {
+    color: rgb(207, 207, 207);
+}
+
+nav ul {
     height: 9vh;
-    background-color: rgb(1, 137, 1);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a:hover{
+    color: rgb(207, 207, 207);
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 2px;
+    font-family: 'Salsa', cursive;
+}
+
+.search-bar input{
+    width: 400px;
+    height: 35px;
+    padding: 2px 10px;
+    margin: 10px;
+    margin-left: 34vw;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Salsa', cursive;
 }
 
 main {
+    min-height: calc(100vh - 9vh - 8vh);
+    font-family: 'Salsa', cursive;
+}
+
+.thumbnail {
+    max-width: 100vw;
+    min-height: calc(100vh - 9vh - 8vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.heading {
+    font-family: 'Salsa', cursive;
+    font-size: 60px;
+    align-content: left;
+    width: 50%;
+    padding: 10px 50px;
+}
+
+.sample-vid {
+    position: relative;
+}
+
+.sample-vid video {
+    width: 95%;
     height: 80vh;
+    margin-right: 40px;
+}
+
+.sample-vid video:hover {
+    animation: video-hover 1s infinite alternate-reverse;
+}
+
+.back1 {
+    position: absolute;
+    background-color: rgb(228, 254, 225);
+    height: 200vw;
+    width: 50vh;
+    z-index: -2;
+    transform: rotateZ(45deg) translate(10px, 0);
+    box-shadow: 12px 17px 424px -5px rgb(215, 255, 215);
+    animation: back-move1 6s infinite alternate-reverse linear;
+}
+
+.back2 {
+    position: absolute;
+    background-color: rgb(228, 254, 225);
+    height: 200vw;
+    width: 50vh;
+    z-index: -2;
+    transform: rotateZ(45deg) translate(800px, 0);
+    box-shadow: 12px 17px 424px -5px rgb(215, 255, 215);
+    animation: back-move2 6s infinite alternate-reverse linear;
+}
+
+.bar {
+    width: 100%;
+    height: 9vh;
+    background-color: var(--bg-color1);
+}
+
+.fast-service {
+    width: 100%;
+    height: 98vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.dialog {
+    width: 70%;
+    margin: auto;
+    font-family: 'Salsa', cursive;
+    font-size: 60px;
+    align-content: center;
+    text-align: center;
+    padding: 0px 20px;
+    padding-top: 80px;
+}
+
+.line {
+    width: 20vw;
+    height: 200vh;
+    background-color: rgb(172, 255, 175);
+    position: absolute;
+    top: -10px;
+    left: 600px;
+    z-index: -2;
+}
+
+.pic1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic1 img {
+    width: 650px;
+    height: 550px;
+    transform: translate(-350px, -44px);
+}
+
+.pic1 img:hover {
+    transform: translate(-350px, -44px);
+    animation: moving 3s ease-in forwards infinite;
 }
 
 footer {
-    background-color: rgb(2, 91, 2);
+    background-color: var(--bg-color2);
     height: 8vh;
     color: white;
     font-family: 'Salsa', cursive;
+}
+
+@keyframes video-hover {
+    from {
+        width: 95%;
+    }
+    to {
+        width: 96%;
+    }
+}
+
+@keyframes back-move1 {
+    from {
+        transform: rotate(45deg) translate(10px, 0);
+    }
+    to {
+        transform: rotate(45deg) translate(100px, 0);
+    }
+}
+
+@keyframes back-move2 {
+    from {
+        transform: rotate(45deg) translate(800px, 0);
+    }
+    to {
+        transform: rotate(45deg) translate(1000px, 0);
+    }
+}
+
+@keyframes moving {
+    0% {
+        transform: translate(-350px, -44px);
+        width: 650px;
+        height: 550px;
+    }
+    50% {
+        transform: translate(350px, -60px)  rotateZ(-10deg);
+        width: 700px;
+        height: 600px;
+    }
+    100% {
+        transform: translate(-350px, -44px);
+        width: 650px;
+        height: 550px;
+    }
 }
