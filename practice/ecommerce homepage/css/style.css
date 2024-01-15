@@ -83,7 +83,7 @@ main {
 .heading {
     font-family: 'Salsa', cursive;
     font-size: 60px;
-    align-content: left;
+    align-content: center;
     width: 50%;
     padding: 10px 50px;
 }
@@ -181,12 +181,21 @@ main {
     height: 100vh;
     background-color: var(--bg-color3);
     display: flex;
+    flex-direction: column;
 }
 
 .testimonials h1 {
-    margin: 10px auto;
-    padding: 40px;
+    margin: 0px auto;
+    padding-top: 40px;
     font-size: 80px;
+}
+
+.box {
+    height: 64vh;
+    width: 70vw;
+    margin: 8vh auto;
+    background-color: white;
+    border: solid black 1px;
 }
 
 footer {
