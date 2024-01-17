@@ -1,3 +1,40 @@
-@media screen and (max-width:) {
+@media screen and (max-width:824px) {
+    .search-bar input {
+        width: 50vw;
+    }
+    header nav {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:516px) {
+    .l1 {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1094px) {
+    .thumbnail {
+        flex-wrap: wrap;
+    }
+
+    .heading {
+        width: 100vw;
+        text-align: center;
+    }
+
+    .sample-vid video {
+        width: 75%;
+        margin: auto;
+    }
+
     
+    @keyframes video-hover {
+        from {
+            width: 75%;
+        }
+        to {
+            width: 77%;
+        }
+    }
+
 }
