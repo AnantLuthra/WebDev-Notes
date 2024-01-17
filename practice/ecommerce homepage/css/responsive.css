@@ -5,28 +5,64 @@
     header nav {
         flex-direction: column;
     }
+
+    .dialog {
+        font-size: 45px;
+        width: 95%;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
 }
 @media screen and (max-width:516px) {
     .l1 {
         flex-direction: column;
+    }
+
+    nav ul{
+        height: 5vh;
+    }
+
+    .sample-vid {
+        transform: translate(0px, -10vh);
+    }
+
+    .testimonials h1 {
+        font-size: 35px;
+    }
+
+    .box {
+        margin-top: 5vh;
     }
 }
 
 @media screen and (max-width:1094px) {
     .thumbnail {
         flex-wrap: wrap;
+        justify-content: flex-start;
+        height: 100vh;
     }
 
     .heading {
+        padding-top: 3vh;
         width: 100vw;
         text-align: center;
+        padding-bottom: 10px;
+        font-size: 50px;
+    }
+
+    .sample-vid {
+        flex-direction: row;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+        height: 50vh;
+        transform: translate(0px, -15vh);
     }
 
     .sample-vid video {
         width: 75%;
-        margin: auto;
+        margin-right: 0px;
     }
-
     
     @keyframes video-hover {
         from {
@@ -37,4 +73,22 @@
         }
     }
 
+}
+
+@media screen and (max-width:485px){
+    .heading {
+        font-size: 30px;
+    }
+
+    .thumbnail {
+        height: 27vh;
+    }
+    
+    .sample-vid video {
+        width: 80%;
+    }
+
+    .sample-vid {
+        transform: translate(0px, -26vh);
+    }
 }
