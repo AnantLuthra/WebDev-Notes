@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 
 :root {
     --bg-color1: rgb(1, 137, 1);
@@ -17,6 +18,7 @@ header {
 
 nav {
     display: flex;
+    align-items:flex-start;
 }
 
 #logo {
@@ -55,11 +57,11 @@ nav ul li a {
 }
 
 .search-bar input{
-    width: 400px;
+    width: 25vw;
     height: 35px;
     padding: 2px 10px;
     margin: 10px;
-    margin-left: 34vw;
+    /* margin-left: 30vw; */
     border-radius: 5px;
     font-size: 20px;
     font-family: 'Salsa', cursive;
@@ -154,7 +156,7 @@ main {
     background-color: rgb(172, 255, 175);
     position: absolute;
     top: -10px;
-    left: 600px;
+    left: 40vw;
     z-index: -2;
 }
 
@@ -187,7 +189,8 @@ main {
 .testimonials h1 {
     margin: 0px auto;
     padding-top: 40px;
-    font-size: 80px;
+    font-size: 4rem;
+    text-align: center;
 }
 
 .box {
@@ -197,6 +200,7 @@ main {
     background-color: white;
     border: solid black 1px;
 }
+
 
 footer {
     background-color: var(--bg-color2);
