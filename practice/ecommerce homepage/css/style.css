@@ -12,6 +12,10 @@
     padding: 0;
 }
 
+body {
+    min-width: 210px;
+}
+
 header {
     background-color: var(--bg-color1);
 }
@@ -68,7 +72,6 @@ nav ul li a {
     height: 35px;
     padding: 2px 10px;
     margin: 10px;
-    /* margin-left: 30vw; */
     margin-right: 5vw;
     border-radius: 5px;
     font-size: 20px;
@@ -85,27 +88,28 @@ main {
     min-height: calc(100vh - 9vh - 8vh);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: relative;
     overflow: hidden;
+    min-height: 590px;
 }
 
 .heading {
     font-family: 'Salsa', cursive;
     font-size: 60px;
-    align-content: center;
+    align-content: left;
     width: 50%;
     padding: 10px 50px;
+    text-align: left;
 }
 
 .sample-vid {
     position: relative;
+    text-align: center;
 }
 
 .sample-vid video {
     width: 95%;
-    height: 80vh;
-    margin-right: 40px;
 }
 
 .sample-vid video:hover {
@@ -145,22 +149,26 @@ main {
     height: 105vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    min-height: 800px;
 }
 
 .dialog {
     width: 70%;
-    margin: auto;
     font-family: 'Salsa', cursive;
     font-size: 60px;
     align-content: center;
     text-align: center;
     padding: 0px 20px;
-    padding-top: 80px;
+    padding-top: 7vh;
 }
 
 .line {
     width: 20vw;
-    height: 200vh;
+    height: 1000vh;
     background-color: rgb(172, 255, 175);
     position: absolute;
     top: -10px;
@@ -178,20 +186,20 @@ main {
 .pic1 img {
     width: 650px;
     height: 550px;
-    transform: translate(-350px, -44px);
+    transform: translate(-20vw, -6vh);
 }
 
 .pic1 img:hover {
-    transform: translate(-350px, -44px);
     animation: moving 3s ease-in forwards infinite;
 }
 
 .testimonials {
     width: 100%;
-    height: 100vh;
     background-color: var(--bg-color3);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonials h1 {
@@ -202,13 +210,39 @@ main {
 }
 
 .box {
-    height: 64vh;
-    width: 70vw;
+    width: 60vw;
     margin: 8vh auto;
+    margin-bottom: 15vh;
     background-color: white;
     border: solid black 1px;
+    min-width: 350px;
 }
 
+.review {
+    display: flex;
+    margin: 5px auto;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 70px;
+    margin: 15px auto;
+}
+
+.comment {
+    width: 100%;
+}
+
+.comment p {
+    margin: 4vh 5vw;
+    text-align: center;
+    font-size: 20px;
+}
 
 footer {
     background-color: var(--bg-color2);
@@ -246,17 +280,17 @@ footer {
 
 @keyframes moving {
     0% {
-        transform: translate(-350px, -44px);
+        transform: translate(-20vw, -6vh);
         width: 650px;
         height: 550px;
     }
     50% {
-        transform: translate(350px, -60px)  rotateZ(-10deg);
+        transform: translate(20vw, -8vh)  rotateZ(-10deg);
         width: 700px;
         height: 600px;
     }
     100% {
-        transform: translate(-350px, -44px);
+        transform: translate(-20vw, -6vh);
         width: 650px;
         height: 550px;
     }
