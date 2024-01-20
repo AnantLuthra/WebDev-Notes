@@ -16,5 +16,6 @@ This is an sample E-commerce website for a brand known as ShopifyX, I made it us
 <div class="sample-vid">
     <img src="./files/preview.gif" alt="./files/preview.gif">
 </div>
+<br>
 
 GIF's link if not visible [🔗](./files/preview.gif)
