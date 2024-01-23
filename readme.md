@@ -5,7 +5,7 @@
 - I'm making notes of both from both of the sources while learning. 
 - My practice code file is also present in the repo.
 - Also learning css through this video [🔗](https://youtu.be/Edsxf_NBFrw)
-
+- Currently i'm using [**this**](https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR) playlist for learning JS.
 
 ### [[HTML](./HTML/), [CSS](./CSS/), [JS](./JS/)] links.
 
