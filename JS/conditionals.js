@@ -41,3 +41,7 @@ else if (age>=18){
         console.log("Then the only plan you should take is this: ", plans.senior)
     }
 }
+
+// Shorthand if else, or say ternary operator
+
+console.log("you can", age>18? "be a life adviser.": "not be a life adviser.");
