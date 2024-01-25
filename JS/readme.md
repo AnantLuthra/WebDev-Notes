@@ -16,6 +16,8 @@
     - [Assignment Operators](#assignment-operators)
     - [Comparison operator](#comparison-operator)
     - [Logical operators](#logical-operators)
+  - [Input, Alert, typecasting into number](#input-alert-typecasting-into-number)
+  - [Conditional expressions](#conditional-expressions)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -204,3 +206,22 @@ const c = 30;
 console.log(a < b && b < c); // true
 console.log(a < b && b > c); // false
 ```
+
+## Input, Alert, typecasting into number
+
+- `input` - We can take input in JS through `prompt()` function as `input()` in python.
+
+- `Alert` - It shows an elert in browser window. Giving some info.
+
+- Typecasting string into number - We typecaste string value got in `prompt()` through this - 
+
+```js
+let a = prompt("enter your age");
+a = Number.parseInt(a);
+```
+
+## Conditional expressions
+
+- `if` - First check
+- `else if` - another must check with a check statement, if true code under this block is exucuted.
+- `else` - if any condition above is not true then this block will execute.
