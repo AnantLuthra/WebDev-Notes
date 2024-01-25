@@ -1,3 +1,5 @@
+const prompt = require("prompt-sync")({sigint:true})
+
 console.log("Welcom to insurance plan consultant")
 console.log("Enter 1 for yes and 2 for no in yes no questions.")
 
