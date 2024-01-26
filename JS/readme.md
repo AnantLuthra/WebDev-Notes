@@ -19,6 +19,12 @@
     - [Ternary operator](#ternary-operator)
   - [Input, Alert, typecasting into number](#input-alert-typecasting-into-number)
   - [Conditional expressions](#conditional-expressions)
+  - [Loops](#loops)
+    - [For Loop](#for-loop)
+    - [For In Loop](#for-in-loop)
+    - [For Of Loop](#for-of-loop)
+    - [While loop](#while-loop)
+    - [Do while loops](#do-while-loops)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -239,4 +245,108 @@ a = Number.parseInt(a);
 - `else if` - another must check with a check statement, if true code under this block is exucuted.
 - `else` - if any condition above is not true then this block will execute.
 - You can see a proper example of above things in this [FILE](./conditionals.js)
+
+## Loops
+
+### For Loop
+
+- The syntax for `for loop` is same as it is in `C` language, which is this - 
+
+```
+for (assignment; condition; increment){
+  code...
+}
+```
+
+- So when program is executed first it will assign the variable as you gave in first statement of for loop which runs only 1 time in a loop.
+- Secondly it will check the condition provided as second statment in the for loop, if condition is true then the code present in for loop will be executed.
+- After execution the incremention of variable will be done.
+- Then again the condition will be checked if true code executed else program will end.
+
+***Eg -***
+```js
+for (let i = 0; i < 5; i++){
+  console.log("Your current level is -", i);
+}
+
+// OUPUT
+/*
+Your current level is - 0
+Your current level is - 1
+Your current level is - 2
+Your current level is - 3
+Your current level is - 4
+*/
+```
+- More example given in this [FILE](./for-loop.js)
+
+### For In Loop
+
+- It's syntax is little bit same as of for loop here is the actual syntax of for in loop.
+
+```
+for (let variable in object){
+  code...
+}
+```
+
+- These for in loops are generally used for interating over objects. But we can also use for in loops for in case of arrays.
+- Example given in this [FILE](./forin-loop.js) in line number 1 - 10.
+
+### For Of Loop
+
+- These loops are for iterating over ***Iterable objects*** for eg - strings, arrays.
+
+**Syntax of for in loop**
+
+```js
+for (let a of iterable){
+  code...
+}
+```
+
+***Eg -***
+
+```js
+for (let b of "dance"){
+    console.log(b);
+}
+
+/* OUPUT
+d
+a
+n
+c
+e
+*/
+```
+
+- Also we can use arrays in place of this string.
+
+### While loop
+
+- It runs until condition given in while is true.
+- First it checks the condition is true or not then run if it's true, and repeats this process until the given condition is false.
+
+***Syntax -***
+```js
+while(condition){
+  code...;
+}
+```
+
+***Eg -*** given in this [FILE](./while-do.js) from line 7-15
+
+### Do while loops
+
+- Only difference it has from normal while loop is that this `do while loop` first run once then check the condition for running further.
+
+***Syntax -***
+```js
+do {
+  code...
+}while (condition)
+```
+
+- More example in thie [FILE](./while-do.js) from line 18-35 in which i've made a slapping game, it's very funny please check it out once. 
 
