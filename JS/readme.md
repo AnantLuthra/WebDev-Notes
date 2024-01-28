@@ -25,6 +25,7 @@
     - [For Of Loop](#for-of-loop)
     - [While loop](#while-loop)
     - [Do while loops](#do-while-loops)
+  - [Functions](#functions)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -350,3 +351,40 @@ do {
 
 - More example in thie [FILE](./while-do.js) from line 18-35 in which i've made a slapping game, it's very funny please check it out once. 
 
+## Functions
+
+- Block of code which we can use many times as we want, it increases reusablity of code, and more managed code.
+  
+***Syntax -***
+
+```js
+function SayHi(name){
+    console.log("hi", name, "bro..");
+    return "How are you bro?";
+}
+
+console.log(SayHi("anant"));
+
+/* OUTPUT
+hi anant bro..
+How are you bro? */
+```
+
+- Modern way of writing function in JS, in this we use `const` and little bit different syntax.
+- It is known as Arrow function.
+
+***# Recommended way***
+```js
+const SayHi = (name) => {
+    console.log("hi", name, "bro..");
+    return "How are you bro?";
+}
+
+console.log(SayHi("anant"));
+
+/* OUTPUT
+hi anant bro..
+How are you bro? */
+```
+
+- More example of function in this [FILE](./functions.js)
