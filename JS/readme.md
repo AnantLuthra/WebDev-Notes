@@ -26,6 +26,10 @@
     - [While loop](#while-loop)
     - [Do while loops](#do-while-loops)
   - [Functions](#functions)
+  - [Strings](#strings)
+  - [Template literals](#template-literals)
+  - [Escape sequence characters](#escape-sequence-characters)
+  - [String methods](#string-methods)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -388,3 +392,53 @@ How are you bro? */
 ```
 
 - More example of function in this [FILE](./functions.js)
+
+## Strings
+
+- strings can be made through double quotes and single as well.
+
+***Ex -***
+```js
+let name = "anant";
+let name1 = 'anant';
+```
+
+## Template literals
+
+- It is like f strings in python, we are able to insert variables into a string by writing variable's name.
+- Also we can put single and double quotes in template literals
+
+***Example of making template literals***
+```js
+let name = "anant";
+let greet = `Hey "${name}" why didn't you come yesterday?`;
+console.log(greet);
+// OUTPUT - Hey "anant" why didn't you come yesterday?
+```
+
+## Escape sequence characters
+
+- Same as it works in python,
+- Use `\` for putting single quote in a string which is made by single quotes.
+- `\n` - for new line.
+- `\t` - for tab.
+
+## String methods
+
+- `.length` - for length of string. **it is a property of strings**
+- `.toUpperCase()` - Makes capital, **it is a method of strings**
+- `.toLowerCase()` - Makes lowercase to whole string, **it is a method of strings**
+- `.slice()` - same as string slicing in python, only difference is - we put `,` instead of `:` as we used in python.
+- `.replace()` - for replacing one word with another in a string.
+- `.concat()` - used for adding many strings into a string, example below.
+
+```js
+let name = "anant";
+let further = " what are you doing their?";
+console.log(name.concat(" is that you?", further));
+
+// OUTPUT - anant is that you? what are you doing their?
+```
+
+- `.trim()` - removes extra whitespaces from left and right side of a string.
+- String is immutable.
