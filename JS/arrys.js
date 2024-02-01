@@ -1,0 +1,1 @@
+console.log("here we start arrays in javascript..")
