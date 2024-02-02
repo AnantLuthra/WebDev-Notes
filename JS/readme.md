@@ -30,6 +30,8 @@
   - [Template literals](#template-literals)
   - [Escape sequence characters](#escape-sequence-characters)
   - [String methods](#string-methods)
+  - [Arrays](#arrays)
+    - [Array methods](#array-methods)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -431,6 +433,8 @@ console.log(greet);
 - `.slice()` - same as string slicing in python, only difference is - we put `,` instead of `:` as we used in python.
 - `.replace()` - for replacing one word with another in a string.
 - `.concat()` - used for adding many strings into a string, example below.
+- `.includes()` - return true if the word provided as argument is present in the string on which this method is put.
+- 
 
 ```js
 let name = "anant";
@@ -442,3 +446,19 @@ console.log(name.concat(" is that you?", further));
 
 - `.trim()` - removes extra whitespaces from left and right side of a string.
 - String is immutable.
+
+## Arrays
+
+- It is like list in python. Storing value of any datatype in this.
+- create it like this `let data = [1, 2, 3, 10, "hello", undefined, true, false]`
+- access the elements like this - `data[1]`.
+- Also accessing element with such a index where any element is not present it will not throw an error it will just return `undefined`.
+- `.length` - For getting length of array.
+- Arrays are mutable.
+
+### Array methods
+
+- `.toString()` - convert whole array into a string.
+- `.join()` - join all the array elements using a separator.
+- `.pop()` - It removes the last element an array. It updates the original array.
+- `.push()` -
