@@ -461,4 +461,7 @@ console.log(name.concat(" is that you?", further));
 - `.toString()` - convert whole array into a string.
 - `.join()` - join all the array elements using a separator.
 - `.pop()` - It removes the last element an array. It updates the original array.
-- `.push()` -
+- `.push()` - adds a new element at the end of the array.
+- `.shift()` - removes first element of array and return it.
+- `.unshift()` - adds element to the beginning, and returns new length of array.
+- 
