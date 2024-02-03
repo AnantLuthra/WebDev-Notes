@@ -464,4 +464,15 @@ console.log(name.concat(" is that you?", further));
 - `.push()` - adds a new element at the end of the array.
 - `.shift()` - removes first element of array and return it.
 - `.unshift()` - adds element to the beginning, and returns new length of array.
+- `delete` - it is an operator it deletes element provided of a array and puts this `<1 empty item>` on the place of that element in that array. - Example -
+
+```js
+let num = [1,2,3];
+delete num[0];
+console.log(num);
+
+// OUTPUT - [ <1 empty item>, 2, 3 ]
+```
+
+- `.concat()` - same works as we used it in strings to merge many strings into one, it returns a new array. Ex - `console.log(nums.concat(num1, num2, num3))`
 - 

@@ -20,8 +20,12 @@ let marks = [1, 2, 3, 4, 5, false, "not present"]
 
 // marks.unshift()
 
-console.log(marks)
-console.log(marks.push(10))
-console.log(marks)
-console.log(marks.unshift(11))
-console.log(marks)
+// console.log(marks)
+// console.log(marks.push(10))
+// console.log(marks)
+// console.log(marks.unshift(11))
+// console.log(marks)
+
+let num = [1,2,3];
+delete num[0];
+console.log(num);
