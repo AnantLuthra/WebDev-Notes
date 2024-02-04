@@ -25,7 +25,25 @@ let marks = [1, 2, 3, 4, 5, false, "not present"]
 // console.log(marks)
 // console.log(marks.unshift(11))
 // console.log(marks)
+// delete num[0];
 
-let num = [1,2,3];
-delete num[0];
-console.log(num);
+
+// let compare = (a, b) =>{
+//     return a - b;
+// } 
+
+
+// // console.log(num)
+
+// // num.reverse()
+// // console.log(num)
+
+// let num = [1,2,3, 0.1, 22];
+
+// num.sort(compare);
+// num.splice(1, 0, 100, 101, 102);
+// console.log(num);
+
+let num = [1,2,5,6];
+let deleted = num.splice(2, 0, 3, 4);
+console.log(num, deleted);

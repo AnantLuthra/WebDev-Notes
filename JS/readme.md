@@ -475,4 +475,32 @@ console.log(num);
 ```
 
 - `.concat()` - same works as we used it in strings to merge many strings into one, it returns a new array. Ex - `console.log(nums.concat(num1, num2, num3))`
-- 
+- `.sort()` - It changes the original array, It by default sorts the array alphabatically. like in digits also, it will put numbers starting from 1 before and after that numbers starting from 2 and so on.., But if we want to make it proper sort function we can make a function and use it like this -
+
+```js
+let compare = (a, b) =>{
+    return a - b
+} 
+
+let num = [1,2,3, 0.1, 22];
+
+num.sort(compare)
+console.log(num)
+```
+
+- `.reverse()` - it reverses, changes the original array.
+- `.splilce()` - This method helps us to delete and add elements at index of our choice, arguments `(index, deleteNumber, values)`, also it returns the deleted elments.
+- Explanation of arguments
+- index - from what index you want insert your elements.
+- deleteNumber - how many elements you want to delete from that index, and insert elements from that place, also even if deleted elemends are 0 or are less than number of elements you want to insert this `.splice()` will push other elements further and insert elements you provide.
+- values - list all values you want to insert seperating with a comma.
+***Example***
+```js
+let num = [1,2,5,6];
+let deleted = num.splice(2, 0, 3, 4);
+console.log(num, deleted);
+// above i'm deleting no element and entering 3 and 4 at index 4.
+// OUTPUT - [ 1, 2, 3, 4, 5, 6 ] []
+// Above deleted is empty because i deleted no elements.
+```
+- `.slice()` - it is same as we did in string slicing case in js, also same as list slicing in `python` just sytax is different.
