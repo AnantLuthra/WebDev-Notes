@@ -32,6 +32,7 @@
   - [String methods](#string-methods)
   - [Arrays](#arrays)
     - [Array methods](#array-methods)
+  - [Using loops with arrays.](#using-loops-with-arrays)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -504,3 +505,39 @@ console.log(num, deleted);
 // Above deleted is empty because i deleted no elements.
 ```
 - `.slice()` - it is same as we did in string slicing case in js, also same as list slicing in `python` just sytax is different.
+
+## Using loops with arrays.
+
+- Looping through arrays.
+
+```js
+let a = [1, 2, 3, 4, 10];
+
+for (let i = 0; i<a.length; i++){
+    console.log(a[i]);
+}
+```
+
+- Using ForEach loop on array - It calls a function, once for each array element.
+
+***Example*** - We are looping through each element and printing it's square..
+```js
+// ForEach loop on arrays.
+a.forEach((element) => {
+    console.log(element * element)
+})
+```
+
+- Array.from - Used to create an array from any other object. It is like typecasting any other iterable datatype into list - as to say in python.. we could do this in python as - 
+```py
+a = "anant"
+print(list(a))
+# OUTPUT - ['a', 'n', 'a', 'n', 't']
+```
+
+But we can do this in javascript like this.. 
+```js
+let a = "anant";
+console.log(Array.from(a));
+// OUTPUT - [ 'a', 'n', 'a', 'n', 't' ]
+```
