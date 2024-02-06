@@ -518,7 +518,7 @@ for (let i = 0; i<a.length; i++){
 }
 ```
 
-- Using ForEach loop on array - It calls a function, once for each array element.
+- Using ForEach loop on array - It calls a function, once for each array element. And we can do whatever we want to do with every element.
 
 ***Example*** - We are looping through each element and printing it's square..
 ```js
@@ -541,3 +541,7 @@ let a = "anant";
 console.log(Array.from(a));
 // OUTPUT - [ 'a', 'n', 'a', 'n', 't' ]
 ```
+
+- `For in` - This loop prints the keys of arrays or say index of elements.
+- `For of` - this loop simply prints the elments of arrays.. 
+- Example of above two are in this [FILE](./loopin-array.js) in line `20-29`.

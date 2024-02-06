@@ -15,3 +15,15 @@ a.forEach((element) => {
 
 let name = "anant";
 console.log(Array.from(name));
+
+
+// For in. on array.
+
+for (let i in a){
+    console.log(a[i]);
+}
+
+// For of. on array.
+for (let i of a){
+    console.log(i);
+}
