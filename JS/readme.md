@@ -518,7 +518,13 @@ for (let i = 0; i<a.length; i++){
 }
 ```
 
-- Using ForEach loop on array - It calls a function, once for each array element. And we can do whatever we want to do with every element.
+- Using ForEach loop on array - It calls a function, once for each array element. And we can do whatever we want to do with every element. It's arguments are as follows - 
+```js
+const a = ["anant", "shiv", "kush"];
+a.forEach((value, index, array) =>{
+  console.log(`On ${index}'th index ${value} is present.`);
+})
+```
 
 ***Example*** - We are looping through each element and printing it's square..
 ```js
