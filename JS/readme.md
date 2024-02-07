@@ -33,6 +33,7 @@
   - [Arrays](#arrays)
     - [Array methods](#array-methods)
   - [Using loops with arrays.](#using-loops-with-arrays)
+  - [Map, Filter \& Reduce](#map-filter--reduce)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -555,3 +556,21 @@ console.log(Array.from(a));
 - `For in` - This loop prints the keys of arrays or say index of elements.
 - `For of` - this loop simply prints the elments of arrays.. 
 - Example of above two are in this [FILE](./loopin-array.js) in line `20-29`.
+
+## Map, Filter & Reduce
+
+- `map()` - It works same as `.forEach()`, only difference is it returns new array which we make and return.
+***Example -***
+```js
+let arr = [5, 6, 7];
+let new_arr = arr.map((value, index, array) => {
+  return value + (2*index);
+})
+console.log(new_arr);
+/* OUTPUT 
+[ 5, 8, 11 ] */
+```
+
+- `.filter()` - Use to filter elements from our array using a function - so those elements on which this function returns true come into the new created array. So this function also returns new array, doesn't modify original one. Example of this present in thie [FILE](./mp-ft-rd.js) in line `7-13`
+
+- `.reduce()` - It takes a function as argument and it run this function on two consecutive elements of arrays each time and do same it with others and return the result. Example of this present in thie [FILE](./mp-ft-rd.js) in line `15-23`
