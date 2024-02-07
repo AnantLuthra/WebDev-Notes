@@ -524,6 +524,10 @@ const a = ["anant", "shiv", "kush"];
 a.forEach((value, index, array) =>{
   console.log(`On ${index}'th index ${value} is present.`);
 })
+/* OUTPUT 
+On 0'th index anant is present.
+On 1'th index shiv is present.
+On 2'th index kush is present.  */
 ```
 
 ***Example*** - We are looping through each element and printing it's square..
