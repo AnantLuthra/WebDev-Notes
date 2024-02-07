@@ -574,3 +574,4 @@ console.log(new_arr);
 - `.filter()` - Use to filter elements from our array using a function - so those elements on which this function returns true come into the new created array. So this function also returns new array, doesn't modify original one. Example of this present in thie [FILE](./mp-ft-rd.js) in line `7-13`
 
 - `.reduce()` - It takes a function as argument and it run this function on two consecutive elements of arrays each time and do same it with others and return the result. Example of this present in thie [FILE](./mp-ft-rd.js) in line `15-23`
+
