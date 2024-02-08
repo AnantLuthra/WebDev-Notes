@@ -34,6 +34,9 @@
     - [Array methods](#array-methods)
   - [Using loops with arrays.](#using-loops-with-arrays)
   - [Map, Filter \& Reduce](#map-filter--reduce)
+  - [Using javascript with html, css](#using-javascript-with-html-css)
+  - [Console object methods.](#console-object-methods)
+  - [Alert, prompt, confirm](#alert-prompt-confirm)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -575,3 +578,30 @@ console.log(new_arr);
 
 - `.reduce()` - It takes a function as argument and it run this function on two consecutive elements of arrays each time and do same it with others and return the result. Example of this present in thie [FILE](./mp-ft-rd.js) in line `15-23`
 
+
+## Using javascript with html, css
+
+- We can include javascript in our html either by using script tag or by including seperate javascript file ...
+
+- Advantages of using separate script file using src attribute of script tag.
+1. Separation of concerns
+2. Browser Caching - If a file is downloaded in a computer when we first opened a website -> then if we reload it won't be downloaded again.
+
+## Console object methods.
+
+- The console object has several methods, log being one of them. And more are listed below ->
+
+- `assert()` - used to check a condition.
+- `clear()` - to clear console.
+- `log()` - to print
+- `table()` - represents data of an object very nicely in a table. (very useful)
+- `warn()` - give warning.
+- `error()` - gives error.
+- `info()` - to give some info. Works similar to `console.log()`.
+- `time()` & `timeEnd()` - use to measure time taken of doing some task, put `time()` on starting of that code and `timeEnd()` on ending of the code. and put any same string - which we say tag inside that .. ***Example*** in this [FILE](./console-objs.js) in line `16-20`
+
+## Alert, prompt, confirm
+
+- `alert()` - simply used to give alert.
+- `prompt()` - arguments `prompt(message, default_value)` .. in default value you put that value which you want to be shown by default, and this argument is optional.
+- `confirm()` - it is like alert but it has `ok` and `cancel` buttons on it. return `true` if pressed `ok` and `false` on `cancel`.
