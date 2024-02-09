@@ -37,6 +37,7 @@
   - [Using javascript with html, css](#using-javascript-with-html-css)
   - [Console object methods.](#console-object-methods)
   - [Alert, prompt, confirm](#alert-prompt-confirm)
+  - [Window object, BOM \& DOM](#window-object-bom--dom)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -605,3 +606,14 @@ console.log(new_arr);
 - `alert()` - simply used to give alert.
 - `prompt()` - arguments `prompt(message, default_value)` .. in default value you put that value which you want to be shown by default, and this argument is optional.
 - `confirm()` - it is like alert but it has `ok` and `cancel` buttons on it. return `true` if pressed `ok` and `false` on `cancel`.
+
+## Window object, BOM & DOM
+
+- Window consists of these three things .. 
+1. DOM - (Document object model), It represents the page content of HTML, for eg- `document.body` - page body is represented as javascript object. eg no.2 - `document.body.background = "green"` - changing background color.
+2. BOM - (Browser Object Model), it provides additional objects provided by the browser(host environment) - `alert/confirm/prompt` are also a part of the BOM.
+3. Javascript Core 
+
+- ***Everything comes under window object in javascript***
+- Window object is global - So if we write `window.console.log("hi")` or only `console.log("hi")` these both will work identically.
+
