@@ -38,6 +38,11 @@
   - [Console object methods.](#console-object-methods)
   - [Alert, prompt, confirm](#alert-prompt-confirm)
   - [Window object, BOM \& DOM](#window-object-bom--dom)
+  - [Walking the DOM](#walking-the-dom)
+    - [Children of an element.](#children-of-an-element)
+    - [firstChild, lastChild \& childNodes](#firstchild-lastchild--childnodes)
+    - [DOM collections](#dom-collections)
+    - [Siblings and parents](#siblings-and-parents)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -617,3 +622,54 @@ console.log(new_arr);
 - ***Everything comes under window object in javascript***
 - Window object is global - So if we write `window.console.log("hi")` or only `console.log("hi")` these both will work identically.
 
+## Walking the DOM
+
+DOM tree referes to the HTML page where all the nodes are objects. There can be 3 main types of nodes in the DOM tree - 
+
+1. Text nodes
+2. element nodes
+3. Comment nodes
+  
+- In HTML page, `<html>` is at the root and `<head>` and `<body>` are its children, etc. 
+- A text node is always a leaf of the tree. It is because - if `<title>` this tag had text in it then we can extract text from it.. but we can't extract anything from text.. In text we can't save HTML tags.
+
+- **Walking the DOM**
+
+- We can get document head by this - `document.head`, similarly get body by - `document.body`
+- `document.documentElement` - Page HTML tag.
+
+### Children of an element.
+
+- This concept is same as our family relations, with our relatives... siblings.. parents... etc..
+- `Child nodes` - Those elements that are direct children of a element.. for eg - `title` is direct children of `head`
+- `Descendents nodes` - All elements of further kids.. like my son's - son.. 
+
+### firstChild, lastChild & childNodes
+
+- `element.firstChild` -> first child element - it can be text because of space between body tag and first tag which you think..
+- `element.lastChild` -> last child element
+- `element.childNodes` -> All child nodes.
+
+- The thing which `element.childNodes` returns is a node list to make it an array we have to do `let arr = Array.from(document.body.childNodes)`.
+
+### DOM collections
+
+- The thing which `element.childNodes` return is also called DOM collections. Their properties are as follows.
+- They are live, element added -> then this collection will be updated.
+- They are iterable using for .. of loop.
+
+
+### Siblings and parents
+
+```
+<div>
+  <h1></h1>
+  <p></p>
+</div>
+```
+
+- in above html code.. - `p` is next and right sibling of `h1`
+- and `h1` is left sibling of `p`.
+
+- We can get next sibling of a element by following way. `element.nextSibling`.
+- `element.parentNode` - For checking parent of a element.
