@@ -43,6 +43,7 @@
     - [firstChild, lastChild \& childNodes](#firstchild-lastchild--childnodes)
     - [DOM collections](#dom-collections)
     - [Siblings and parents](#siblings-and-parents)
+    - [Element Only Navigation](#element-only-navigation)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -636,7 +637,7 @@ DOM tree referes to the HTML page where all the nodes are objects. There can be 
 - **Walking the DOM**
 
 - We can get document head by this - `document.head`, similarly get body by - `document.body`
-- `document.documentElement` - Page HTML tag.
+- `document.documentElement` - It gives whole HTML of page.. so if we use `document.documentElement.firstElementChild` then we will get head.
 
 ### Children of an element.
 
@@ -673,3 +674,14 @@ DOM tree referes to the HTML page where all the nodes are objects. There can be 
 
 - We can get next sibling of a element by following way. `element.nextSibling`.
 - `element.parentNode` - For checking parent of a element.
+- `element.parentElement` - It will return the parent only if it's parent is an element, otherwise it will return `null`.
+
+### Element Only Navigation
+
+If we try to get first child of a parent then we get text because of space present between tags.. so for getting first element child.. we use following thing..
+
+- `element.firstElementChild` - First element child of an element in HTML
+- `document.previousElementSibling`
+- `document.nextElementSibling`
+- `document.lastElementChild`
+- `element.children` - it is their for usage in place of `element.childNodes` - for getting only all element childs.
