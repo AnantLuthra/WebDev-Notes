@@ -44,6 +44,7 @@
     - [DOM collections](#dom-collections)
     - [Siblings and parents](#siblings-and-parents)
     - [Element Only Navigation](#element-only-navigation)
+  - [Table Navigation](#table-navigation)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -685,3 +686,19 @@ If we try to get first child of a parent then we get text because of space prese
 - `document.nextElementSibling`
 - `document.lastElementChild`
 - `element.children` - it is their for usage in place of `element.childNodes` - for getting only all element childs.
+
+## Table Navigation
+
+- The table DOM element provides more properties which are as follows - 
+
+- `table.rows` - collection of `tr` elements.
+- `table.caption` - reference of caption.
+- `table.tHead` - reference to `thead`
+- `table.tFoot` - reference to `tfoot`
+- `table.tbodies` - collection of tbody elements.
+- `tbody.rows` - Collection of tr inside.
+- `tr.cells` - collection of td and th
+- `tr.SectionRowIndex` - Index of tr inside enclosing element.
+- `tr.rowIndex` - Row number starting from 0.
+  
+- `tr.cellIndex` - no. of cells inside enclosing tr.
