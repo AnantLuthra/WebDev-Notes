@@ -45,6 +45,7 @@
     - [Siblings and parents](#siblings-and-parents)
     - [Element Only Navigation](#element-only-navigation)
   - [Table Navigation](#table-navigation)
+  - [Searching the DOM](#searching-the-dom)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -702,3 +703,20 @@ If we try to get first child of a parent then we get text because of space prese
 - `tr.rowIndex` - Row number starting from 0.
   
 - `tr.cellIndex` - no. of cells inside enclosing tr.
+
+## Searching the DOM
+
+- `document.getElementById()` - We can get element using it's id giving it as argument to this function.
+
+```js
+let heading = document.getElementById("heading1");
+// Though this we are changing background.
+heading.style.background = "grey";
+```
+
+- `document.querySelectorAll()` - Return all elements inside an element matching the given CSS selector or say class name. Argument given like this - `(".heading1")`
+- `document.querySelector()` - We use this in case we have only one element having that class name in the DOM, so in return we get only one element through this function.
+- `document.getElementsByTagName()` - Returns all elements of same tag, eg - `h1`, or `p`
+- `document.getElementsByClassName()` - returns elements that have the given CSS class.
+- `document.getElementsByName()` - Searches elements by the name of attribute.
+
