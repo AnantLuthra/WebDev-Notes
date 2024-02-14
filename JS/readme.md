@@ -44,8 +44,9 @@
     - [DOM collections](#dom-collections)
     - [Siblings and parents](#siblings-and-parents)
     - [Element Only Navigation](#element-only-navigation)
-  - [Table Navigation](#table-navigation)
-  - [Searching the DOM](#searching-the-dom)
+    - [Table Navigation](#table-navigation)
+    - [Searching the DOM](#searching-the-dom)
+    - [Matches, Closest \& Contains methods](#matches-closest--contains-methods)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -688,7 +689,7 @@ If we try to get first child of a parent then we get text because of space prese
 - `document.lastElementChild`
 - `element.children` - it is their for usage in place of `element.childNodes` - for getting only all element childs.
 
-## Table Navigation
+### Table Navigation
 
 - The table DOM element provides more properties which are as follows - 
 
@@ -704,7 +705,7 @@ If we try to get first child of a parent then we get text because of space prese
   
 - `tr.cellIndex` - no. of cells inside enclosing tr.
 
-## Searching the DOM
+### Searching the DOM
 
 - `document.getElementById()` - We can get element using it's id giving it as argument to this function.
 
@@ -720,3 +721,14 @@ heading.style.background = "grey";
 - `document.getElementsByClassName()` - returns elements that have the given CSS class.
 - `document.getElementsByName()` - Searches elements by the name of attribute.
 
+### Matches, Closest & Contains methods
+
+- `element.matches(class)` - To check if element matches the given CSS selector, or say given class. Returns true and false. below is example.
+
+```js
+para1 = document.getElementById("para1")
+
+/* Checking if element whos id is para1 does 
+belongs to test class or not.  */
+console.log(para1.matches(".test"))    
+```
