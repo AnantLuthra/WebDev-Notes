@@ -735,3 +735,4 @@ console.log(para1.matches(".test"))
 
 - `element.closest(class)` - It is used to check the closest element who have the given css selector, present in ancestor elements, it also checks itself.
 - `element.contains(elementB)` - returns true if elementB is inside element(a descendant of element) or when `element == elementB`.
+
