@@ -740,4 +740,17 @@ console.log(para1.matches(".test"))
 ## Events & other DOM properties
 
 - `console.dir()` - It shows an element with its properties whereas `.log()` shows the element DOM tree.
-- 
+  
+- Below are used to read tag name of an element.
+- `tagName` - only exists for element nodes.
+- `nodeName` - defined for any node (text, comments etc.)
+
+- `element.innerHTML` - It gives the html present inside the tag as text.
+- `element.outerHTML` - It gives the html present inside the tag as text + the tag itself is present in the string.
+- innerhtml is only valid for elment nodes. For other node types we can use nodeValue or data.
+Example - `document.body.firstChild.nodeValue`.
+
+- `element.textContent` - It prints only text inside a tag. All child tag's text will also be printed.
+
+- **The Hidden Property** - if we put hidden property in a html tag, it will be hidden. And we can make it visible through javascript as follows - `element.hidden = false;` - this will work.
+
