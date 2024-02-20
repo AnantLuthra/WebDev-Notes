@@ -48,6 +48,8 @@
     - [Searching the DOM](#searching-the-dom)
     - [Matches, Closest \& Contains methods](#matches-closest--contains-methods)
   - [Events \& other DOM properties](#events--other-dom-properties)
+    - [Attribute methods](#attribute-methods)
+    - [Data-customAttribute attributes](#data-customattribute-attributes)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -754,3 +756,44 @@ Example - `document.body.firstChild.nodeValue`.
 
 - **The Hidden Property** - if we put hidden property in a html tag, it will be hidden. And we can make it visible through javascript as follows - `element.hidden = false;` - this will work.
 
+### Attribute methods
+
+- `element.getAttribute(name)` - Method used to get the value of an attribute.
+- `element.hasAttribute(name)` - Method to check for existence of an attribute.
+- `element.setAttribute(name, value)` - Method to set the value of an attribute.
+
+Example - 
+```js
+document.getElementById("header-entry").setAttribute("class", "work1 main-class");
+```
+
+- `element.removeAttribute(name)` - Method to remove an attribute.
+- `element.attributes` - Method to get the collection of all attributes.
+
+### Data-customAttribute attributes
+
+We can create custom attribute in javscript for putting in html tags,
+but in case in future attribute of same name is introduced as you
+created - that may create an issue, for preventing this we've a property
+which is `element.dataset`, we can create custom attributes in this way -
+
+```html
+<div id="ele1" class="main" data-value="50" data-name="qualified" data-work="running">
+   Inside content
+</div>
+```
+Like above we can create custom attributes starting from `data-` and we can access
+the values in the following way:-
+
+```js
+let element = document.getElementById("ele1");
+console.log(element.dataset);
+// Through this all attributes created will be printed like this
+/* OUTPUT
+DOMStringMap(3) { value → "50", name → "qualified", work → "running" }
+
+also then we can access specific values like this -   */
+
+console.log(element.dataset.value);
+/* OUTPUT - 50  */
+```
