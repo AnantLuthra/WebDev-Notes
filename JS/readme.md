@@ -50,6 +50,7 @@
   - [Events \& other DOM properties](#events--other-dom-properties)
     - [Attribute methods](#attribute-methods)
     - [Data-customAttribute attributes](#data-customattribute-attributes)
+    - [Insertion methods](#insertion-methods)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -796,4 +797,14 @@ also then we can access specific values like this -   */
 
 console.log(element.dataset.value);
 /* OUTPUT - 50  */
+```
+
+### Insertion methods
+
+One way to add html.
+```js
+let div = document.createElement('div') // create
+div.className = " alert"    // Set class
+div.innerHTML = " <span>hello</span>"
+document.body.append(div)
 ```
