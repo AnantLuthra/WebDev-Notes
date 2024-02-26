@@ -803,8 +803,8 @@ console.log(element.dataset.value);
 
 One way to add html.
 ```js
-let div = document.createElement('div') // create
-div.className = " alert"    // Set class
+let div = document.createElement('div') // creating element
+div.className = "alert"    // Set class
 div.innerHTML = " <span>hello</span>"
 document.body.append(div)
 ```
