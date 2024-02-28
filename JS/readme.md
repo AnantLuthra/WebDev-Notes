@@ -808,3 +808,11 @@ div.className = "alert"    // Set class
 div.innerHTML = " <span>hello</span>"
 document.body.append(div)
 ```
+
+- `node.appendChild(element)` - This will insert our created `element` as a child in node.
+- `node.append(element)` - To add element at last place in the node.
+- `node.prepend(element)` - To add element at first place in the node.
+- `node.prepend(element)` - To add element at first place in the node.
+- `node.before(element)` - To add element before the node.
+- `node.after(element)` - To add element after the node.
+- `node.replaceWith(element)` - `node` will be replaced with `element`.
