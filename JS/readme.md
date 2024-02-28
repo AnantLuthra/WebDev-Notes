@@ -51,6 +51,10 @@
     - [Attribute methods](#attribute-methods)
     - [Data-customAttribute attributes](#data-customattribute-attributes)
     - [Insertion methods](#insertion-methods)
+    - [Insert Adjacent HTML/Text/Element](#insert-adjacent-htmltextelement)
+    - [Node Removal](#node-removal)
+    - [ClassName \& ClassList](#classname--classlist)
+    - [Set TimeOut \& Set Interval](#set-timeout--set-interval)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -816,3 +820,59 @@ document.body.append(div)
 - `node.before(element)` - To add element before the node.
 - `node.after(element)` - To add element after the node.
 - `node.replaceWith(element)` - `node` will be replaced with `element`.
+
+### Insert Adjacent HTML/Text/Element
+
+This method also helps us to insert HTML.
+Its syntax is as follows: -
+
+```js
+let element1 = document.getElementById("first");
+element1.insertAdjacentHTML('place', 'HTML');
+
+// Place - Here you've to chose where to insert HTML
+```
+
+- Follows are places where you can insert HTML.
+
+- `beforebegin` - Before the tag on which you're running this method.
+- `afterbegin` - Inserts HTML just after beginning the Element.
+- `beforeend` - Before ending of tag.
+- `afterend` - After ending of tag.
+
+### Node Removal
+
+- `element.remove()` - It will remove `element` from HTML.
+
+
+### ClassName & ClassList
+
+Through following we can remove/add/toggle specific classes of an element in HTML.
+
+- `element.classList.add/remove("class")` - Adds/removes a class.
+- `element.classList.toggle("class")` - Adds `class` if it isn't their in element or removes it. 
+- `element.classList.contains("class")` - Check presence of a class, `true, false` return value.
+
+### Set TimeOut & Set Interval
+
+- **`setTimeout()`** - Used for running a script after a given time period of running this method. **Syntax** below..
+
+```js
+let timerID = setTimeout(function, delay, arg1, arg2);
+```
+- Also we can cancel the timeout if we want, it is like diffusing a time bomb. We can do it by the use of return value of running this method.
+
+```js
+clearTimeout(timerID);
+```
+
+- **`setInterval()`** - We keep running the function after given time interval.
+**Syntax & arguments**
+```js
+let intervalID = setInterval(function, delay, arg1, arg2);
+```
+
+- Stopping the the interval...
+```js
+clearInterval(intervalID);
+```
