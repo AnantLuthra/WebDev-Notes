@@ -55,6 +55,7 @@
     - [Node Removal](#node-removal)
     - [ClassName \& ClassList](#classname--classlist)
     - [Set TimeOut \& Set Interval](#set-timeout--set-interval)
+    - [Browser events](#browser-events)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -876,3 +877,55 @@ let intervalID = setInterval(function, delay, arg1, arg2);
 ```js
 clearInterval(intervalID);
 ```
+
+### Browser events
+
+- ***Some DOM events are as follows:-***
+
+- Mouse events
+- Keyboard events
+- Form element events
+- Document events
+
+- **Handling events**
+
+We can handle events by HTML attributes, like below example.
+
+```html
+<h5 class="s1head" onclick="alert('You clicked me bro..')">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, totam.</h5>
+```
+
+Events can also be handled like this in javascript file:-
+
+```js
+s1head.onclick = function(){
+  alert("Are you ok?");
+}
+```
+
+- ***addEventListener & removeEventListener***
+
+- addEventListener is used to assign multiple handlers to an event.
+
+```js
+
+element.addEventListener(event, handler);
+element.removeEventListener(event, handler);
+
+/* in above handler - event argument are like - 'onclick', 'onmouseenter' etc.
+  and handler is a function which will come in action if that event occured.  */
+```
+
+- **The Event object**
+
+- When an object happens the browser creates an event objects put details into it and passes it as an argument to the handler
+
+```js
+elem.onclick = function(event) {
+  ...
+}
+```
+
+- `event.type` - Event type.
+- `event.currentTarget` - element that handled the event.. "in case of you put event on a container and inside it their are many elements, and we wanna know through which element the event is occured"
+- `event.clientX / event.clientY` - coordinates of the cursor
