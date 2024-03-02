@@ -37,3 +37,9 @@ some2.onclick = y
 
 // some2.removeEventListener('click', x)
 // some2.removeEventListener('click', y)
+
+function off_bulb () {
+    document.getElementById("bulbup").classList.toggle("yelloww");
+}
+
+setInterval(off_bulb, 500);

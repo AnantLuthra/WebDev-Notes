@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <style>
+        
         h1 {
             text-align: center;
             font-size: 60px;
@@ -47,6 +48,40 @@
             margin: auto;
             padding-top: 4vh;
         }
+
+        .acha_button {
+            width: 40px;
+            height: 37px;
+            border: 1px solid black;
+            border-radius: 25px;
+        }
+        
+        .whitee {
+            height: 70px;
+            width: 60px;
+            border-radius: 40px;
+            border: 1px solid black;
+        }
+
+        .yelloww {
+            background-color: yellow;
+            box-shadow: 0 0 30px rgba(255, 255, 0, 0.7);
+        }
+
+        .bulbcontainer {
+            left: 40px;
+            top: 70px;
+            position: absolute;
+        }
+
+        #bulbbelow {
+            height: 30px;
+            width: 30px;
+            border-radius: 10px;
+            margin-left: 15px;
+            background-color: brown;
+        }
+        
     </style>
 </head>
 
@@ -90,6 +125,10 @@
             </div>
         </div>
     </nav>
+    <div class="bulbcontainer">
+        <div class="whitee yelloww" id="bulbup" ></div>
+        <div id="bulbbelow"></div>
+    </div>
     <h1 id="heading1">Hey everyone</h1>
     <table class="table">
         <caption>Hey bro whatsappp???</caption>
@@ -128,6 +167,10 @@
     <div class="test box1">
         <h5 class="s1head" onclick="alert('bahut marunga agr dubara chua to...')">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, totam.</h5>
         <h5 class="s1head">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, voluptate!</h5>
+        <button class="acha_button" onclick="alert('You pressed 1')">1</button>
+        <button class="acha_button" onclick="alert('You pressed 2')">2</button>
+        <button class="acha_button" onclick="alert('You pressed 3')">3</button>
+        
     </div>
     <div class="test" id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quas voluptatum quidem
         aspernatur
