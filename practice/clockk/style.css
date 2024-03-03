@@ -1,0 +1,22 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav h1 {
+    font-size: 60px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700px;
+    font-style: normal;
+}
+
+.main {
+    align-items: center;
+    justify-content: center;
+}
+
