@@ -513,7 +513,7 @@ console.log(num)
 ```
 
 - `.reverse()` - it reverses, changes the original array.
-- `.splilce()` - This method helps us to delete and add elements at index of our choice, arguments `(index, deleteNumber, values)`, also it returns the deleted elments.
+- `.splice()` - This method helps us to delete and add elements at index of our choice, arguments `(index, deleteNumber, values)`, also it returns the deleted elments.
 - Explanation of arguments
 - index - from what index you want insert your elements.
 - deleteNumber - how many elements you want to delete from that index, and insert elements from that place, also even if deleted elemends are 0 or are less than number of elements you want to insert this `.splice()` will push other elements further and insert elements you provide.
