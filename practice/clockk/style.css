@@ -7,6 +7,7 @@ nav {
     text-align: center;
 }
 
+
 nav h1 {
     font-size: 60px;
     font-family: "Playfair Display", serif;
@@ -16,7 +17,65 @@ nav h1 {
 }
 
 .main {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 100px;
+    margin: 20vh auto;
+    position: relative;
+}
+
+
+#hours {
+    width: 7px;
+  height: 46px;
+  background-color: black;
+  position: relative;
+  left: -135px;
+  top: -29px;
+  border-radius: 10px;
+  clip-path: polygon(34% 0%, 75% 0%, 100% 100%, 0% 100%);
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+}
+
+
+#minutes {
+    width: 7px;
+    height: 73px;
+    background-color: black;
+    position: relative;
+    left: -144px;
+    top: -44px;
+    border-radius: 10px;
+    clip-path: polygon(34% 0%, 75% 0%, 100% 100%, 0%  100%);
+    transform-origin: bottom left;
+    transform: rotate(0deg);
+}
+
+
+#seconds {
+    width: 4px;
+    height: 78px;
+    background-color: black;
+    position: relative;
+    left: -152px;
+    top: -44px;
+    border-radius: 10px;
+    clip-path: polygon(34% 0%, 75% 0%, 100% 100%, 0%  100%);
+    transform-origin: bottom left;
+    transform: rotate(0deg);
+}
+
+
+#dot {
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  background-color: black;
+  position: relative;
+  left: -158px;
+  top: -5px;
 }
 
