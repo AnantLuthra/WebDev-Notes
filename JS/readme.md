@@ -56,6 +56,8 @@
     - [ClassName \& ClassList](#classname--classlist)
     - [Set TimeOut \& Set Interval](#set-timeout--set-interval)
     - [Browser events](#browser-events)
+  - [Callbacks, Promises \& Async/await](#callbacks-promises--asyncawait)
+    - [Callback functions](#callback-functions)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -929,3 +931,62 @@ elem.onclick = function(event) {
 - `event.type` - Event type.
 - `event.currentTarget` - element that handled the event.. "in case of you put event on a container and inside it their are many elements, and we wanna know through which element the event is occured"
 - `event.clientX / event.clientY` - coordinates of the cursor
+
+
+## Callbacks, Promises & Async/await
+
+- **Asynchronus** - In this the task which we are doing doesn't stop the code but goes in background and runs when its task is done or its time has come to run.
+- **Synchronus** - In this the task which we are doing run one by one. like first input, then after it will do something else..
+
+### Callback functions
+
+- A callback function is a function passed into another function as an argument, which is then used inside the outer function to complete some kind of action.
+
+```js
+
+function loadScript(src, callback1, arg1){
+    let script = document.createElement("script");
+    script.src = src;
+    script.onload = function(){
+        callback1(arg1)
+    }
+    document.body.appendChild(script);
+}
+
+function hello(arg1){
+    console.log(`hello ${arg1}`)
+}
+
+loadScript("insert-html.js", hello, "anant")
+```
+
+- This is called Callback-based style of async programming. A function that does something asynchronously should provide a callback argument where we put the function we want to run after the async task is done.
+
+- **Handling Errors**
+
+- Also we can handle errors we the async task is not done properly.. we can do this by putting `script.onerror` function.
+
+```js
+
+function loadScri(src, callback1, callback2, arg1){
+    let script = document.createElement("script");
+    script.src = src;
+    script.onload = function(){   // Function called on successful loading
+        callback1(arg1);
+    }
+    script.onerror = function(){  // Function called on error
+        callback2(new Error("Loading script got error"));
+    }
+    document.body.appendChild(script);
+}
+
+function hello(arg1){                 // Success function
+    console.log(`hello ${arg1}`)
+}
+function somewrong(error){            //Error function
+    console.log(`Error is ${error}`)
+}
+
+loadScri("insert-html.js", hello, somewrong, "anant")
+```
+- In above code you can see `hello` funtion means callback1 is called on succful loading of script and `somewrong` function means callback2 is called on error.
