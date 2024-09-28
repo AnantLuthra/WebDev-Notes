@@ -1067,4 +1067,4 @@ promise2.then((value) => {
 - If we are interested in only succesful completions we can provide only one function argument to `.then()` method. Like this ```promise.then(code)```
 - If we are interested in only errors we can provide only one function argument to `.catch()` method. Like this ```promise.catch(code)```
 
-- Also you can watch a video from my tweet of full explanation of example used in this [file](./promises.js) about `promises`, `.then()`, `.catch()` - [Tweet](https://x.com/anant_luthra_/status/1840092953521598535)
+- Also you can watch a video from my tweet of full explanation of example used in this [file](./promise.js) about `promises`, `.then()`, `.catch()` - [Tweet](https://x.com/anant_luthra_/status/1840092953521598535)
