@@ -58,6 +58,8 @@
     - [Browser events](#browser-events)
   - [Callbacks, Promises \& Async/await](#callbacks-promises--asyncawait)
     - [Callback functions](#callback-functions)
+    - [Pyramid of Doom](#pyramid-of-doom)
+    - [Promises](#promises)
 
 ## Ecmascript
 - It is a standard on which javascript is based.
@@ -990,3 +992,79 @@ function somewrong(error){            //Error function
 loadScri("insert-html.js", hello, somewrong, "anant")
 ```
 - In above code you can see `hello` funtion means callback1 is called on succful loading of script and `somewrong` function means callback2 is called on error.
+
+### Pyramid of Doom
+
+- When our js code have many nested callbacks, it is called Pyramid of Doom. It is very difficult to read and understand the code. 
+- This situation is also called as `Callback Hell`.
+- Example below.
+
+<img src="https://i.sstatic.net/oDSVD.png">
+
+- **Solution to Pyramid of Doom** - We can solve this by using `Promises`.
+
+### Promises
+
+- A promise is what it means, we give it a task and it is fulfilled either by completing it sucussfully by `resolve` or by failing it by `reject`.
+
+- **Creating a promise**
+
+```js
+let promise = new Promise(function(reject, resolve){
+    // executor code
+})
+```
+- Resolve and reject are functions provided by JS itself.
+- Promise object has these properties.
+  - `state` - Initially pending, then either fulfilled or rejected depending upon task completion.
+  - `result` - Initially undefined, then value from resolve/reject.
+- **Resolve** - It is used when task is completed successfully.
+- **Reject** - It is used when task is failed.
+- Demonstration below.
+
+```js
+let promise = new Promise(function (resolve, reject) {
+    console.log("promise1 pending...")
+    setTimeout(() => {
+        let value = confirm("Process1 done?")
+        if (value){
+            resolve(true)
+        }
+        else{
+            reject(new Error("All packets not received"))
+        }
+    }, 5000)
+})
+```
+- In above code we are asking user to confirm if the process is done or not.. if user press ok then resolve will be called and if user press cancel then reject will be called.
+- Also you can see what values i passed with resolve and reject.. these values will be passed to the function which we will pass to `then` and `catch` methods.
+
+**Consumers: `.then()` and `.catch()`**
+
+- The result of promise is handled by `then` and `catch` methods.
+
+- `then` - It is called when promise is resolved.
+- `catch` - It is called when promise is rejected.
+
+```js
+promise1.then((value) => {
+    console.log(`p1 done, value is: ${value}`)
+}, (error) => {
+    console.log("Some error occured in p1", error.message)
+})
+
+promise2.then((value) => {
+    console.log(`p2 done, value is: ${value}`)
+}).catch((error) => {
+    console.log("Error occured in p2", error.message)
+})
+```
+
+- In above code you can see that i've used `then` and `catch` methods to handle the result of promise.
+- If we don't use `catch` method then if promise is rejected then it will throw an error.., otherwise if handled will only print the text you printed, so it is recommended to use `catch` method.
+- One more thing to notice is that, while handling `promise1` with `.then()` in that i also used a second argument in `then` method.. this is used to handle the error if promise is rejected. Whereas while handling promise2 i used `catch` method outside of `then` method to handle the error, both ways are correct but second one is easy to read and understand.
+
+- If we are interested in only succesful completions we can provide only one function argument to `.then()` method. Like this ```promise.then(code)```
+- If we are interested in only errors we can provide only one function argument to `.catch()` method. Like this ```promise.catch(code)```
+
+- Also you can watch a video from my tweet of full explanation of example used in this [file](./promises.js) about `promises`, `.then()`, `.catch()` - [Tweet](https://x.com/anant_luthra_/status/1840092953521598535)
